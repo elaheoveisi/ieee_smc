@@ -43,6 +43,8 @@ Each of these is demonstrated in `template.qmd` — copy the block you need.
 | `::: {.flow-diagram}` / `::: {.flow-step}` / `::: {.flow-arrow}` | Step-by-step vertical process/pipeline | See the "A Process or Pipeline" slide |
 | `::: {.flow-branch}` | Two parallel steps merging into one flow | Nest two `::: {.flow-step}` blocks inside a `::: {.flow-branch}` inside `::: {.flow-diagram}` |
 | `::: {.stats}` / `::: {.stat}` / `[10+]{.stat-number}` / `[Label]{.stat-label}` | Big number + label callouts for quick credibility/impact stats | See the "By the Numbers" slide |
+| `[text]{.badge}` | A small inline pill tag | Use inline anywhere, e.g. next to a `.card-title` |
+| `.secondary` modifier | De-emphasizes a component, or marks it as an alternate/second category (gray instead of orange) | Add alongside the base class: `::: {.card .secondary}`, `::: {.stat .secondary}`, `::: {.flow-step .secondary}`, `[text]{.badge .secondary}` |
 | `::: {.quote}` / `[— Name]{.quote-attribution}` | A large italic pull-quote with an attribution line | See the "What People Are Saying" slide |
 | `::: {.divider}` / `[Title]{.divider-title}` / `[Subtitle]{.divider-subtitle}` | A big centered slide marking a transition between major sections | See the un-headed divider slide after "A Process or Pipeline" — no `##` heading needed, `---` alone starts the slide |
 | `::: {.impact-grid}` / `::: {.impact-card}` / `::: {.impact-text}` / `[label]{.impact-label}` / `[desc]{.impact-desc}` | Full-bleed photo tiles with a gradient caption overlay | See the "Real-World Impact" slide |
@@ -103,7 +105,21 @@ resources:
 
 ## Customizing the Theme
 
-`theme.scss` controls colors, fonts, and the custom component styles (`.card`, `.flow-step`, etc.). The lab's accent color (`#EC672C`) and dark background (`#252525`) are set near the top of the file — change those two values to re-theme every component at once. Avoid renaming existing CSS classes if you want to stay compatible with future updates to this template.
+`theme.scss` controls colors, fonts, and the custom component styles (`.card`, `.flow-step`, etc.). Avoid renaming existing CSS classes if you want to stay compatible with future updates to this template.
+
+### Color System
+
+Five SCSS variables at the top of `theme.scss` drive every component's color:
+
+| Variable | Default | Used for |
+|---|---|---|
+| `$primary-color` | `#EC672C` (orange) | Accent, emphasis, the "primary" of a two-category comparison |
+| `$secondary-color` | `#757575` (OSU Cool Gray 10) | De-emphasis, the "secondary"/alternate of a two-category comparison |
+| `$gray-light` | `#DDDDDD` (OSU Cool Gray 2) | Light surfaces, e.g. `.card` backgrounds |
+| `$gray-dark` | `#757575` | Dark text on light surfaces |
+| `$body-bg` | `#252525` | The slide background |
+
+Change `$primary-color` and `$body-bg` to re-theme most of the deck at once. Every card, stat, and flow-step also accepts a `.secondary` modifier class that swaps its orange accents for `$secondary-color` — useful for visually separating two categories (e.g. current vs. proposed, required vs. optional) without introducing a third color. `[text]{.badge}` / `[text]{.badge .secondary}` are small inline tags built on the same two colors.
 
 ## Publishing
 

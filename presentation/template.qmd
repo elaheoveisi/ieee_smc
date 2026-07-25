@@ -62,7 +62,7 @@ Oklahoma State University
 
 ## By the [Numbers]{.accent}
 
-<!-- .stats containing .stat blocks — big number + label callouts, good for quick credibility/impact numbers. -->
+<!-- .stats containing .stat blocks — big number + label callouts, good for quick credibility/impact numbers. Add .secondary to a stat to de-emphasize it (e.g. a smaller/older comparison number). -->
 
 ::: {.stats}
 
@@ -84,10 +84,10 @@ Oklahoma State University
 [Metric Three]{.stat-label}
 :::
 
-::: {.stat}
+::: {.stat .secondary}
 [6+]{.stat-number}
 
-[Metric Four]{.stat-label}
+[Metric Four (secondary)]{.stat-label}
 :::
 
 :::
@@ -157,24 +157,30 @@ End with a memorable [one-liner]{.accent} that sums up the point.
   lists of related concepts (3-5 words each works best). Wraps automatically
   based on how many cards you add. Add .vertical (::: {.cards .vertical})
   to stack cards in a single column instead.
+
+  Add .secondary to a card (or a stat, or a flow-step) to de-emphasize it or
+  mark it as an alternate category — e.g. "current" (orange) vs. "proposed"
+  (gray), or "required" vs. "optional". [text]{.badge} / [text]{.badge
+  .secondary} are small inline tags that use the same two-tone system.
 -->
 
 ::: {.cards}
 
 ::: {.card}
-[Option A]{.card-title}
+[Option A]{.card-title} [Primary]{.badge}
 
 Short description of the first option or concept.
 :::
 
-::: {.card}
-[Option B]{.card-title}
+::: {.card .secondary}
+[Option B]{.card-title} [Alternate]{.badge .secondary}
 
 Short description of the second option or concept.
 :::
 
 :::
-- Hi, how are you?
+1. Hi, how are you?
+2.
 
 ---
 

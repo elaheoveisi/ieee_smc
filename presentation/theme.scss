@@ -1,6 +1,12 @@
 /*-- scss:defaults --*/
 
-$primary-color: #EC672C;
+// Color system: one accent (orange) for emphasis, one secondary tint (gray)
+// for de-emphasis/grouping, plus the OSU brand grays for light surfaces.
+// Change these five values to re-theme every component in this file.
+$primary-color: #EC672C;      // accent — emphasis, primary category, "this one"
+$secondary-color: #757575;    // secondary tint — de-emphasis, alternate category (OSU Cool Gray 10)
+$gray-light: #DDDDDD;         // light surface, e.g. card backgrounds (OSU Cool Gray 2)
+$gray-dark: #757575;          // same value as $secondary-color, used for dark-on-light text
 $body-bg: #252525;
 $body-color: #ffffff;
 $link-color: #EC672C;
@@ -273,10 +279,21 @@ $heading-font: "Rubik", sans-serif !default;
     color: rgba(255,255,255,0.85);
 }
 
-.reveal table th,
+.reveal table th {
+    border: none;
+    border-bottom: 2px solid $primary-color;
+    padding: 0.4em 0.8em 0.6em;
+    text-align: left;
+    color: $primary-color;
+    font-weight: 700;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
 .reveal table td {
     border: none;
-    padding: 0.4em 0.8em;
+    padding: 0.5em 0.8em;
     text-align: left;
     font-weight: normal;
 }
@@ -328,7 +345,16 @@ $heading-font: "Rubik", sans-serif !default;
 }
 
 .flow-step strong {
-    color: #EC672C;
+    color: $primary-color;
+}
+
+/* Add .secondary for an optional/alternate step in a pipeline: ::: {.flow-step .secondary} */
+.flow-step.secondary {
+    border-color: rgba(117,117,117,0.5);
+}
+
+.flow-step.secondary strong {
+    color: $secondary-color;
 }
 
 .flow-arrow {
@@ -370,16 +396,25 @@ $heading-font: "Rubik", sans-serif !default;
 }
 
 .card {
-    border-left: 3px solid #EC672C;
-    background: #DDDDDD;
+    border-left: 3px solid $primary-color;
+    background: $gray-light;
     border-radius: 6px;
     padding: 0.55rem 0.8rem;
+}
+
+/* Add .secondary to de-emphasize a card or group it as an alternate category: ::: {.card .secondary} */
+.card.secondary {
+    border-left-color: $secondary-color;
+}
+
+.card.secondary .card-title {
+    color: $secondary-color;
 }
 
 .card-title {
     display: block;
     font-weight: 700;
-    color: #EC672C;
+    color: $primary-color;
     font-size: 0.85em;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -393,6 +428,23 @@ $heading-font: "Rubik", sans-serif !default;
     margin: 0;
 }
 
+/* Badges — small inline tags. Default is accent orange; add .secondary for the muted variant. */
+.badge {
+    display: inline-block;
+    background: $primary-color;
+    color: #ffffff;
+    font-size: 0.6em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.2em 0.7em;
+    border-radius: 99px;
+}
+
+.badge.secondary {
+    background: $secondary-color;
+}
+
 /* Stats — ::: {.stats} containing ::: {.stat} fenced divs */
 .stats {
     display: grid;
@@ -402,15 +454,24 @@ $heading-font: "Rubik", sans-serif !default;
 }
 
 .stat {
-    border-left: 3px solid #EC672C;
+    border-left: 3px solid $primary-color;
     padding-left: 0.8rem;
+}
+
+/* Add .secondary to de-emphasize a stat or group it as an alternate category: ::: {.stat .secondary} */
+.stat.secondary {
+    border-left-color: $secondary-color;
+}
+
+.stat.secondary .stat-number {
+    color: $secondary-color;
 }
 
 .stat-number {
     display: block;
     font-size: 2.2rem;
     font-weight: 900;
-    color: #EC672C;
+    color: $primary-color;
     line-height: 1;
 }
 
