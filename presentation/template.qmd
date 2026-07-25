@@ -15,11 +15,11 @@ title: "Your Talk Title<br>A [Highlight Phrase]{.accent} Goes Here"
 subtitle: "One-line subtitle describing the talk"
 author: "Your Name"
 institute: "Oklahoma State University"
-date: "2026-01-01"
+date: today
 format:
   revealjs:
     theme: [default, theme.scss]
-    slide-number: false
+    slide-number: true
     transition: fade
     background-transition: fade
     logo: assets/logo.png
@@ -52,6 +52,7 @@ Oklahoma State University
 - What this talk is going to cover
 
 :::
+
 ::: {.column width="40%"}
 ![](assets/logo.png)
 <!-- Swap this for a photo of yourself or your work, e.g. ![](assets/me.jpg) -->
