@@ -1,0 +1,425 @@
+---
+title: "LLM-Mediated Human–AI Interaction in Search and Rescue:<br>[Impact of Expertise on Attentional Allocation]{.accent}"
+subtitle: "Human performance, visual attention, and expertise under LLM guidance"
+author: "Elahe Oveisi · Dr. Hemanth Manjunatha"
+institute: "Department of Mechanical and Aerospace Engineering · Oklahoma State University"
+format:
+  revealjs:
+    theme: [default, theme.scss]
+    slide-number: true
+    transition: fade
+    background-transition: fade
+    logo: assets/logo.png
+    footer: "iHuman Lab · Oklahoma State University"
+    width: 1280
+    height: 720
+    margin: 0.08
+    navigation-mode: linear
+    controls: true
+    progress: true
+resources:
+  - assets/Mediaa.mp4
+  - assets/Media1 (1).mp4
+title-slide-attributes:
+  data-background-image: assets/background.jpg
+  data-background-opacity: "0.45"
+  data-background-color: "#252525"
+---
+
+## Search and Rescue is a [time-critical]{.accent} human–AI setting
+
+::: {.columns}
+::: {.column width="47%"}
+
+::: {.hook}
+Operators must locate and recover people while conditions change quickly.
+:::
+
+- Missions occur in **challenging environments**
+- Teams increasingly rely on **drones and digital decision aids**
+- Decisions must be made under **time pressure**
+- Guidance is useful only if it supports — rather than disrupts — attention
+
+:::
+::: {.column width="53%"}
+![](assets/Picture1.png){fig-alt="Drones supporting search-and-rescue operations" width="100%"}
+
+:::
+:::
+
+---
+
+## Research questions and [contribution]{.accent}
+
+::: {.cards}
+::: {.card}
+[Performance]{.card-title}
+
+Does LLM guidance improve task outcomes?
+:::
+::: {.card}
+[Attention]{.card-title}
+
+How does guidance change visual attention and eye-tracking metrics?
+:::
+::: {.card}
+[Expertise]{.card-title}
+
+Does expertise moderate these effects?
+:::
+::: {.card .secondary}
+[Testbed]{.card-title}
+
+Can a controlled simulation support repeatable human–AI teaming research?
+:::
+:::
+
+::: {.punchline}
+The study connects **task performance**, **visual behavior**, and **expertise** in one LLM-mediated SAR experiment.
+:::
+
+---
+
+## Study design in [brief]{.accent}
+
+::: {.columns}
+::: {.column width="56%"}
+![](assets/Picture2.png){fig-alt="Search-and-rescue simulation interface with annotated game elements" width="100%"}
+:::
+::: {.column width="44%"}
+
+::: {.stats}
+::: {.stat}
+[13]{.stat-number}
+[Participants]{.stat-label}
+:::
+::: {.stat}
+[3]{.stat-number}
+[Trials each]{.stat-label}
+:::
+::: {.stat}
+[2 + 1]{.stat-number}
+[LLM + control]{.stat-label}
+:::
+::: {.stat}
+[15 min]{.stat-number}
+[or 1,000 moves]{.stat-label}
+:::
+:::
+
+**Task:** rescue victims efficiently in a partially observable grid while victim health deteriorates.
+
+**ALT** requests advice and reveals victim health for **5 seconds**.
+:::
+:::
+
+---
+
+## Demonstration [video]{.accent} 1
+
+<video controls width="90%" style="display:block; margin:auto; max-height:70vh;">
+  <source src="assets/Mediaa.mp4" type="video/mp4">
+</video>
+
+---
+
+## Demonstration [video]{.accent} 2
+
+<video controls width="90%" style="display:block; margin:auto; max-height:70vh;">
+  <source src="assets/Media1%20(1).mp4" type="video/mp4">
+</video>
+
+---
+
+## How the LLM was [prompted]{.accent}
+
+::: {.columns}
+::: {.column width="54%"}
+
+- **Grid-based world:** each cell represents an object such as empty space, wall, victim, lava, door, or key.
+- **Reachability check:** BFS determines which targets are reachable and their distance from the player.
+- Models: **OpenAI** and **Gemini**.
+
+::: {.cards .vertical}
+::: {.card}
+[Guidance style]{.card-title}
+Short, calm, action-focused guidance.
+:::
+::: {.card}
+[Priority]{.card-title}
+Reachable survivors first.
+:::
+::: {.card}
+[Mission rules]{.card-title}
+Avoid lava, use keys, open doors.
+:::
+:::
+
+:::
+::: {.column width="46%"}
+**No coordinates, step counts, or visible reasoning.**
+:::
+:::
+
+---
+
+## Eye-tracking [features]{.accent}
+
+| Feature | What it shows |
+|---|---|
+| Fixation count | How often the participant focused on an area |
+| Fixation duration | How long the participant looked at one area |
+| Saccade duration | Duration of fast eye movements |
+| Pupil diameter SD | Variation in pupil size, related to workload |
+| Game-area fixation time | Attention to the SAR environment |
+| Chat-panel fixation time | Attention to the LLM guidance |
+| AOI transitions | Switching gaze between game and chat |
+
+::: {.punchline}
+A Tobii remote eye tracker was calibrated before the task; **LSL synchronized gaze, game events, player actions, and LLM message timing**.
+:::
+
+---
+
+## Measures and [analysis]{.accent}
+
+::: {.columns}
+::: {.column width="50%"}
+
+### Outcomes
+
+- **Task:** victims per step, total rewards, saved victims
+- **Visual attention:** game/chat fixation allocation, fixation duration, pupil-size SD, fixation and saccade counts
+
+:::
+::: {.column width="50%"}
+
+::: {.stats}
+::: {.stat}
+[13]{.stat-number}
+[Participants]{.stat-label}
+:::
+::: {.stat}
+[3]{.stat-number}
+[Randomized trials]{.stat-label}
+:::
+::: {.stat}
+[60 Hz]{.stat-number}
+[Eye-tracker rate]{.stat-label}
+:::
+::: {.stat}
+[K = 2]{.stat-number}
+[Expertise clusters]{.stat-label}
+:::
+:::
+
+:::
+:::
+
+**Mixed-effects model:** outcome = LLM condition + LLM × expertise + expertise + participant random intercept.
+
+---
+
+## LLM guidance improved [performance]{.accent}
+
+| Outcome | Effect | β | SE | q |
+|---|---:|---:|---:|---:|
+| **Victims per step** | **LLM** | **0.020** | 0.006 | **< .01** |
+|  | Expertise | 0.016 | 0.013 | ns |
+|  | LLM × Expertise | −0.009 | 0.010 | ns |
+| **Total rewards** | **LLM** | **267.143** | 90.203 | **< .01** |
+|  | Expertise | −17.714 | 135.183 | ns |
+|  | LLM × Expertise | 181.857 | 139.742 | ns |
+| **Saved victims** | LLM | 0.035 | 0.206 | ns |
+|  | Expertise | 0.221 | 0.436 | ns |
+|  | LLM × Expertise | 0.435 | 0.320 | ns |
+
+---
+
+## LLM guidance changed [visual behavior]{.accent}
+
+<style>
+.compact-results table td:first-child {
+  white-space: nowrap;
+}
+.compact-results table td,
+.compact-results table td strong {
+  color: #ffffff !important;
+}
+.compact-results table td:last-child strong {
+  color: #EC672C !important;
+}
+</style>
+
+::: {.compact-results}
+
+| Outcome | Effect | β | SE | q |
+|---|---:|---:|---:|---:|
+| **Mean fixation** | **LLM** | **−19.326** | 6.216 | **< .01** |
+| **Pupil-size SD** | **LLM** | **+0.122** | 0.014 | **< .0001** |
+|  | **LLM × Expertise** | **−0.051** | 0.021 | **< .05** |
+| **Game-area** | **LLM** | **−0.184** | 0.023 | **< .0001** |
+|  | **LLM × Expertise** | **+0.114** | 0.035 | **< .01** |
+| **Chat-area** | **LLM** | **+0.092** | 0.016 | **< .0001** |
+| **Fixation count** | **LLM × Expertise** | **+0.815** | 0.342 | **< .05** |
+| **Saccade count** | **LLM × Expertise** | **+0.961** | 0.325 | **< .01** |
+
+:::
+
+---
+
+## Expertise changes [how guidance is used]{.accent}
+
+::: {.cards}
+::: {.card}
+[Experts]{.card-title}
+
+Maintained more engagement with the game under LLM support and showed stronger changes in visual scanning.
+:::
+::: {.card .secondary}
+[Novices]{.card-title}
+
+Shifted more attention away from the game, consistent with greater reliance on the guidance panel.
+:::
+:::
+
+::: {.punchline}
+A plausible interpretation is that experts **cross-check the advice against the environment**, rather than simply following it.
+:::
+
+---
+
+## LLM guidance [redirects attention]{.accent}
+
+::: {.metric-grid}
+::: {.metric}
+[−0.184]{.value .accent}
+
+[Game-area fixation]{.label}
+
+[Less fixation allocation · 95% CI: −0.229 to −0.139 · q < .0001]{.detail}
+:::
+::: {.metric}
+[+0.092]{.value .accent}
+
+[Chat-area fixation]{.label}
+
+[More fixation allocation · 95% CI: 0.061 to 0.123 · q < .0001]{.detail}
+:::
+:::
+
+::: {.hook .center}
+Attention moved toward the LLM guidance as engagement with the game decreased.
+:::
+
+---
+
+## Guidance also changes [fixation and pupil behavior]{.accent}
+
+::: {.metric-grid}
+::: {.metric}
+[−19.33 ms]{.value .accent}
+
+[Mean fixation duration]{.label}
+
+[Shorter fixations · 95% CI: −31.509 to −7.143 · q < .01]{.detail}
+:::
+::: {.metric}
+[+0.122]{.value .accent}
+
+[Pupil-size SD]{.label}
+
+[Greater pupil variability · 95% CI: 0.095 to 0.149 · q < .0001]{.detail}
+:::
+:::
+
+::: {.punchline}
+LLM support did not only change **where** participants looked; it also changed **how** they visually processed the task.
+:::
+
+---
+
+## Expertise [moderates visual behavior]{.accent}
+
+| Measure | LLM × expertise β | 95% CI | q |
+|---|---:|---:|---:|
+| **Game-area fixation** | **+0.114** | 0.045 to 0.183 | **< .01** |
+| **Fixation count** | **+0.815** | 0.145 to 1.485 | **< .05** |
+| **Saccade count** | **+0.961** | 0.324 to 1.598 | **< .01** |
+| **Pupil-size SD** | **−0.051** | −0.092 to −0.010 | **< .05** |
+
+::: {.punchline}
+Experts showed a **smaller shift away from the game** and stronger changes in visual activity under LLM support.
+:::
+
+---
+
+## Limitations and [future work]{.accent}
+
+::: {.columns}
+::: {.column width="43%"}
+
+### Limitations
+
+- Small sample
+- Task-based expertise classification
+- Simulated grid-world task
+- Behavior may differ from real SAR operations
+
+:::
+::: {.column width="57%"}
+
+### Future work
+
+- **Trust manipulation:** Study how operators respond when the LLM makes mistakes.
+- **Workload-aware guidance:** Reduce unnecessary cognitive demand.
+- **Situation awareness:** Embed cognitive-process measures in the task.
+- **Adaptive LLM guidance:** Tailor assistance to the operator and context.
+
+:::
+:::
+
+---
+
+## [Future studies]{.accent}
+
+::: {.cards}
+::: {.card}
+[Reliability]{.card-title}
+Manipulate guidance reliability and evaluate trust calibration.
+:::
+::: {.card}
+[Real-time adaptation]{.card-title}
+Use performance and physiological signals to decide when assistance is needed.
+:::
+::: {.card}
+[Situation awareness]{.card-title}
+Measure global and local awareness during LLM-supported decisions.
+:::
+::: {.card .secondary}
+[Generalization]{.card-title}
+Test larger samples and more realistic SAR scenarios.
+:::
+:::
+
+::: {.punchline}
+The next step is moving from **static guidance** toward **reliable, adaptive human–AI teaming**.
+:::
+
+---
+
+## {background-image="assets/background.jpg" background-opacity="0.45"}
+
+::: {style="display:flex; flex-direction:column; align-items:center; justify-content:center; height:80vh; text-align:center;"}
+
+![](assets/logo.png){style="max-height:110px; border-radius:0 !important; box-shadow:none !important;"}
+
+::: {style="font-size:2.8rem; font-weight:900; color:#ffffff; margin-top:0.8rem;"}
+Thank you
+:::
+
+::: {style="font-size:1.5rem; color:#EC672C; margin-top:1.0rem; font-weight:700;"}
+Questions?
+:::
+
+:::
