@@ -134,9 +134,18 @@ The study connects **task performance**, **visual behavior**, and **expertise** 
 
 ## Demonstration [video]{.accent} 2
 
-<video controls width="90%" style="display:block; margin:auto; max-height:70vh;">
+::: {.columns}
+::: {.column width="65%"}
+
+<video controls width="100%" style="display:block; margin:auto; max-height:480px;">
   <source src="assets/Media1%20(1).mp4" type="video/mp4">
 </video>
+
+:::
+::: {.column width="32%"}
+![](assets/image.png){fig-alt="Grid of black T-shaped symbols in different orientations on a gray background" width="100%"}
+:::
+:::
 
 ---
 
