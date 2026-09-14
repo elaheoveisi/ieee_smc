@@ -35,7 +35,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="smc_files/libs/revealjs/dist/theme/quarto-abfdc7b74a7595b0602950c8b397f95e.css">
+  <link rel="stylesheet" href="smc_files/libs/revealjs/dist/theme/quarto-e9176fdc385d7d35212e241501ebb406.css">
   <link href="smc_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="smc_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="smc_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -230,7 +230,7 @@ Elahe Oveisi · Dr.&nbsp;Hemanth Manjunatha
 <source src="assets/Media1%20(1).mp4" type="video/mp4">
 </video>
 </section>
-<section id="how-the-llm-was-prompted" class="slide level2">
+<section id="how-the-llm-was-prompted" class="slide level2 prompt-slide">
 <h2>How the LLM was <span class="accent">prompted</span></h2>
 <div class="llm-message">
 <p>You are a search-and-rescue coordinator giving calm, human-like radio guidance to the operator. Follow mission and environment rules: rescue all survivors, prioritize visible reachable survivors who are still saveable, nearest first, use matching keys for locked doors, unlocked doors can be opened, carry only one key, avoid lava, and never mention unreachable objects. Instructions must be directional and action-focused, always using North, South, East, West, with no coordinates, step counts, or visible reasoning. From the current state {obs}, choose one immediate objective by prioritizing the nearest reachable visible saveable survivor, then the next saveable survivor if relevant; otherwise choose the best remaining alive victim, then the nearest reachable survivor or key, or finally explore visible areas that may open a new path. Output either a sparse one-sentence instruction or a detailed 3–4 sentence radio briefing, always concise, natural, rule-compliant, and wrapped strictly as &lt;START&gt; … &lt;END&gt;.</p>
@@ -298,7 +298,7 @@ Elahe Oveisi · Dr.&nbsp;Hemanth Manjunatha
 <p><img data-src="assets/eyetracker_setup.png" style="width:100.0%" alt="Participant playing the SAR game while a Tobii eye tracker records gaze"></p>
 </div></div>
 <div class="punchline">
-<p>A Tobii remote eye tracker was calibrated before the task; <strong>LSL synchronized gaze, game events, player actions, and LLM message timing</strong>.</p>
+
 </div>
 </section>
 <section id="measures-and-analysis" class="slide level2">
@@ -531,12 +531,6 @@ Elahe Oveisi · Dr.&nbsp;Hemanth Manjunatha
 <p><strong>Novice</strong></p>
 <p>Follows guidance directly</p>
 </div>
-</div>
-<div class="flow-arrow">
-<p>↓</p>
-</div>
-<div class="flow-step">
-<p>Action executed</p>
 </div>
 </div>
 </section>

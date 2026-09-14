@@ -140,7 +140,7 @@ The study connects **task performance**, **visual behavior**, and **expertise** 
 
 ---
 
-## How the LLM was [prompted]{.accent}
+## How the LLM was [prompted]{.accent} {.prompt-slide}
 
 ::: {.llm-message}
 You are a search-and-rescue coordinator giving calm, human-like radio guidance to the operator. Follow mission and environment rules: rescue all survivors, prioritize visible reachable survivors who are still saveable, nearest first, use matching keys for locked doors, unlocked doors can be opened, carry only one key, avoid lava, and never mention unreachable objects. Instructions must be directional and action-focused, always using North, South, East, West, with no coordinates, step counts, or visible reasoning. From the current state {obs}, choose one immediate objective by prioritizing the nearest reachable visible saveable survivor, then the next saveable survivor if relevant; otherwise choose the best remaining alive victim, then the nearest reachable survivor or key, or finally explore visible areas that may open a new path. Output either a sparse one-sentence instruction or a detailed 3–4 sentence radio briefing, always concise, natural, rule-compliant, and wrapped strictly as \<START\> ... \<END\>.
@@ -187,7 +187,6 @@ Avoid lava, use keys, open doors.
 :::
 
 ::: {.punchline}
-A Tobii remote eye tracker was calibrated before the task; **LSL synchronized gaze, game events, player actions, and LLM message timing**.
 :::
 
 ---
@@ -316,12 +315,6 @@ Cross-checks guidance against the environment (scans, verifies)
 
 Follows guidance directly
 :::
-:::
-::: {.flow-arrow}
-↓
-:::
-::: {.flow-step}
-Action executed
 :::
 :::
 

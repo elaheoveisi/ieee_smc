@@ -381,6 +381,52 @@ $heading-font: "Rubik", sans-serif !default;
     margin-bottom: 0;
 }
 
+/* Fit the full prompt, implementation notes, and cards on one slide. */
+.reveal .prompt-slide {
+    h2 { margin-bottom: 12px; }
+
+    .llm-message {
+        box-sizing: border-box;
+        padding: 14px 18px;
+        margin: 8px 0 12px;
+    }
+
+    .llm-message p {
+        font-size: 20px;
+        line-height: 1.35;
+    }
+
+    > ul {
+        font-size: 20px;
+        margin: 0 0 10px 24px;
+    }
+
+    > ul > li {
+        line-height: 1.3;
+        margin: 5px 0;
+    }
+
+    .cards {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+        margin-top: 10px;
+    }
+
+    .card {
+        padding: 10px 14px;
+    }
+
+    .card p {
+        font-size: 18px;
+        line-height: 1.35;
+    }
+
+    .card-title {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+}
+
 /* Flow diagram */
 .flow-diagram {
     display: flex;
