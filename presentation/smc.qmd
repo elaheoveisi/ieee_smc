@@ -394,15 +394,15 @@ Experts showed a **smaller shift away from the game** and stronger changes in vi
 ::: {.cards}
 ::: {.card}
 [Trust & reliability]{.card-title}
-Manipulate guidance reliability and study how operators respond and calibrate trust when the LLM makes mistakes.
+Test how LLM errors affect operator responses and trust.
 :::
 ::: {.card}
-[Adaptive, workload-aware guidance]{.card-title}
-Use performance and physiological signals to tailor assistance and reduce unnecessary cognitive demand.
+[Adaptive guidance]{.card-title}
+Tailor help using performance and body signals to reduce mental workload.
 :::
 ::: {.card}
 [Situation awareness]{.card-title}
-Embed cognitive-process measures to capture global and local awareness during LLM-supported decisions.
+Measure awareness of nearby hazards and the overall mission during LLM-guided decisions.
 :::
 ::: {.card .secondary}
 [Generalization]{.card-title}
