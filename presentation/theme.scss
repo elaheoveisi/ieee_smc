@@ -334,6 +334,26 @@ $heading-font: "Rubik", sans-serif !default;
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
+/* Compact the eye-tracking slide without changing other tables. */
+.reveal #eye-tracking-features {
+    table {
+        font-size: 0.8em;
+        line-height: 1.3;
+    }
+
+    table td {
+        padding: 0.4em 0.65em;
+    }
+
+    .column img {
+        display: block;
+        width: 92% !important;
+        max-height: 460px;
+        object-fit: contain;
+        margin: 0 auto;
+    }
+}
+
 /* Code blocks */
 .reveal pre {
     box-shadow: none;
