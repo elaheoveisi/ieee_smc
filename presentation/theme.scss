@@ -77,6 +77,12 @@ $heading-font: "Rubik", sans-serif !default;
     padding-left: 16px;
 }
 
+/* reveal.js zeroes the top margin on ul/ol but not p, so a column starting
+   with a paragraph sits lower than one starting with a list — normalize it */
+.reveal .column > *:first-child {
+    margin-top: 0;
+}
+
 .reveal ul li::marker {
     color: #EC672C;
 }
@@ -345,6 +351,36 @@ $heading-font: "Rubik", sans-serif !default;
     max-height: none;
 }
 
+/* Add .center-v to a ::: {.column} to vertically center its content
+   alongside a taller sibling column */
+.reveal .column.center-v {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* LLM message — ::: {.llm-message}, a full prompt shown as a wide rounded
+   callout box (cream/tan), distinct from the orange-accented cards elsewhere */
+.llm-message {
+    background: #F1E4B8;
+    border: 1px solid #D8C48A;
+    border-radius: 14px;
+    padding: 0.9rem 1.3rem;
+    margin: 0.4rem 0 1rem 0;
+    width: 100%;
+}
+
+.llm-message p {
+    color: #2a2a2a !important;
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.llm-message p:last-child {
+    margin-bottom: 0;
+}
+
 /* Flow diagram */
 .flow-diagram {
     display: flex;
@@ -441,14 +477,14 @@ $heading-font: "Rubik", sans-serif !default;
     display: block;
     font-weight: 700;
     color: $primary-color;
-    font-size: 0.85em;
+    font-size: 0.9em;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 0.2rem;
 }
 
 .card p {
-    font-size: 0.72em;
+    font-size: 0.9em;
     color: #333333;
     line-height: 1.4;
     margin: 0;
@@ -508,6 +544,55 @@ $heading-font: "Rubik", sans-serif !default;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     margin-top: 0.2rem;
+}
+
+/* Metric grid — ::: {.metric-grid} containing ::: {.metric} fenced divs, each with
+   a [value]{.value}, [label]{.label}, and optional [detail]{.detail} line */
+.metric-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.metric {
+    background: $gray-light;
+    border-left: 3px solid $primary-color;
+    border-radius: 8px;
+    padding: 1rem 1.2rem;
+}
+
+/* Add .secondary to de-emphasize a metric or group it as an alternate category: ::: {.metric .secondary} */
+.metric.secondary {
+    border-left-color: $secondary-color;
+}
+
+.metric.secondary .value {
+    color: $secondary-color !important;
+}
+
+.value {
+    display: block;
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: $primary-color;
+    line-height: 1;
+}
+
+.label {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #222222;
+    margin-top: 0.5rem;
+}
+
+.detail {
+    display: block;
+    font-size: 1.05rem;
+    color: #555555;
+    line-height: 1.4;
+    margin-top: 0.35rem;
 }
 
 /* Quote — ::: {.quote} with a [name]{.quote-attribution} line */

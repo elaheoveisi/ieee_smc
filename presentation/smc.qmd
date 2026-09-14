@@ -51,6 +51,9 @@ Operators must locate and recover people while conditions change quickly.
 
 ## Research questions and [contribution]{.accent}
 
+::: {.columns}
+::: {.column width="62%"}
+
 ::: {.cards}
 ::: {.card}
 [Performance]{.card-title}
@@ -76,6 +79,12 @@ Can a controlled simulation support repeatable human–AI teaming research?
 
 ::: {.punchline}
 The study connects **task performance**, **visual behavior**, and **expertise** in one LLM-mediated SAR experiment.
+:::
+
+:::
+::: {.column width="38%"}
+![](assets/eyetracker_setup.png){fig-alt="Participant using an eye tracker while playing the search-and-rescue game" width="100%"}
+:::
 :::
 
 ---
@@ -133,14 +142,15 @@ The study connects **task performance**, **visual behavior**, and **expertise** 
 
 ## How the LLM was [prompted]{.accent}
 
-::: {.columns}
-::: {.column width="54%"}
+::: {.llm-message}
+You are a search-and-rescue coordinator giving calm, human-like radio guidance to the operator. Follow mission and environment rules: rescue all survivors, prioritize visible reachable survivors who are still saveable, nearest first, use matching keys for locked doors, unlocked doors can be opened, carry only one key, avoid lava, and never mention unreachable objects. Instructions must be directional and action-focused, always using North, South, East, West, with no coordinates, step counts, or visible reasoning. From the current state {obs}, choose one immediate objective by prioritizing the nearest reachable visible saveable survivor, then the next saveable survivor if relevant; otherwise choose the best remaining alive victim, then the nearest reachable survivor or key, or finally explore visible areas that may open a new path. Output either a sparse one-sentence instruction or a detailed 3–4 sentence radio briefing, always concise, natural, rule-compliant, and wrapped strictly as \<START\> ... \<END\>.
+:::
 
 - **Grid-based world:** each cell represents an object such as empty space, wall, victim, lava, door, or key.
 - **Reachability check:** BFS determines which targets are reachable and their distance from the player.
 - Models: **OpenAI** and **Gemini**.
 
-::: {.cards .vertical}
+::: {.cards}
 ::: {.card}
 [Guidance style]{.card-title}
 Short, calm, action-focused guidance.
@@ -155,16 +165,12 @@ Avoid lava, use keys, open doors.
 :::
 :::
 
-:::
-::: {.column width="46%"}
-**No coordinates, step counts, or visible reasoning.**
-:::
-:::
-
 ---
 
 ## Eye-tracking [features]{.accent}
 
+::: {.columns}
+::: {.column width="58%"}
 | Feature | What it shows |
 |---|---|
 | Fixation count | How often the participant focused on an area |
@@ -174,6 +180,11 @@ Avoid lava, use keys, open doors.
 | Game-area fixation time | Attention to the SAR environment |
 | Chat-panel fixation time | Attention to the LLM guidance |
 | AOI transitions | Switching gaze between game and chat |
+:::
+::: {.column width="42%"}
+![](assets/eyetracker_setup.png){fig-alt="Participant playing the SAR game while a Tobii eye tracker records gaze" width="100%"}
+:::
+:::
 
 ::: {.punchline}
 A Tobii remote eye tracker was calibrated before the task; **LSL synchronized gaze, game events, player actions, and LLM message timing**.
@@ -287,6 +298,33 @@ Shifted more attention away from the game, consistent with greater reliance on t
 A plausible interpretation is that experts **cross-check the advice against the environment**, rather than simply following it.
 :::
 
+::: {.flow-diagram}
+::: {.flow-step}
+**LLM guidance received**
+:::
+::: {.flow-arrow}
+↓
+:::
+::: {.flow-branch}
+::: {.flow-step}
+**Expert**
+
+Cross-checks guidance against the environment (scans, verifies)
+:::
+::: {.flow-step .secondary}
+**Novice**
+
+Follows guidance directly
+:::
+:::
+::: {.flow-arrow}
+↓
+:::
+::: {.flow-step}
+Action executed
+:::
+:::
+
 ---
 
 ## LLM guidance [redirects attention]{.accent}
@@ -306,17 +344,6 @@ A plausible interpretation is that experts **cross-check the advice against the 
 
 [More fixation allocation · 95% CI: 0.061 to 0.123 · q < .0001]{.detail}
 :::
-:::
-
-::: {.hook .center}
-Attention moved toward the LLM guidance as engagement with the game decreased.
-:::
-
----
-
-## Guidance also changes [fixation and pupil behavior]{.accent}
-
-::: {.metric-grid}
 ::: {.metric}
 [−19.33 ms]{.value .accent}
 
@@ -357,7 +384,7 @@ Experts showed a **smaller shift away from the game** and stronger changes in vi
 ## Limitations and [future work]{.accent}
 
 ::: {.columns}
-::: {.column width="43%"}
+::: {.column width="34%"}
 
 ### Limitations
 
@@ -367,38 +394,29 @@ Experts showed a **smaller shift away from the game** and stronger changes in vi
 - Behavior may differ from real SAR operations
 
 :::
-::: {.column width="57%"}
+::: {.column width="66%"}
 
 ### Future work
 
-- **Trust manipulation:** Study how operators respond when the LLM makes mistakes.
-- **Workload-aware guidance:** Reduce unnecessary cognitive demand.
-- **Situation awareness:** Embed cognitive-process measures in the task.
-- **Adaptive LLM guidance:** Tailor assistance to the operator and context.
-
-:::
-:::
-
----
-
-## [Future studies]{.accent}
-
 ::: {.cards}
 ::: {.card}
-[Reliability]{.card-title}
-Manipulate guidance reliability and evaluate trust calibration.
+[Trust & reliability]{.card-title}
+Manipulate guidance reliability and study how operators respond and calibrate trust when the LLM makes mistakes.
 :::
 ::: {.card}
-[Real-time adaptation]{.card-title}
-Use performance and physiological signals to decide when assistance is needed.
+[Adaptive, workload-aware guidance]{.card-title}
+Use performance and physiological signals to tailor assistance and reduce unnecessary cognitive demand.
 :::
 ::: {.card}
 [Situation awareness]{.card-title}
-Measure global and local awareness during LLM-supported decisions.
+Embed cognitive-process measures to capture global and local awareness during LLM-supported decisions.
 :::
 ::: {.card .secondary}
 [Generalization]{.card-title}
 Test larger samples and more realistic SAR scenarios.
+:::
+:::
+
 :::
 :::
 

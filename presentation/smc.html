@@ -35,7 +35,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="smc_files/libs/revealjs/dist/theme/quarto-d77d4730751b24756bf6141794fda3d8.css">
+  <link rel="stylesheet" href="smc_files/libs/revealjs/dist/theme/quarto-abfdc7b74a7595b0602950c8b397f95e.css">
   <link href="smc_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="smc_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="smc_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -167,6 +167,8 @@ Elahe Oveisi · Dr.&nbsp;Hemanth Manjunatha
 </section>
 <section id="research-questions-and-contribution" class="slide level2">
 <h2>Research questions and <span class="accent">contribution</span></h2>
+<div class="columns">
+<div class="column" style="width:62%;">
 <div class="cards">
 <div class="card">
 <p><span class="card-title">Performance</span></p>
@@ -188,6 +190,9 @@ Elahe Oveisi · Dr.&nbsp;Hemanth Manjunatha
 <div class="punchline">
 <p>The study connects <strong>task performance</strong>, <strong>visual behavior</strong>, and <strong>expertise</strong> in one LLM-mediated SAR experiment.</p>
 </div>
+</div><div class="column" style="width:38%;">
+<p><img data-src="assets/eyetracker_setup.png" style="width:100.0%" alt="Participant using an eye tracker while playing the search-and-rescue game"></p>
+</div></div>
 </section>
 <section id="study-design-in-brief" class="slide level2">
 <h2>Study design in <span class="accent">brief</span></h2>
@@ -227,14 +232,15 @@ Elahe Oveisi · Dr.&nbsp;Hemanth Manjunatha
 </section>
 <section id="how-the-llm-was-prompted" class="slide level2">
 <h2>How the LLM was <span class="accent">prompted</span></h2>
-<div class="columns">
-<div class="column" style="width:54%;">
+<div class="llm-message">
+<p>You are a search-and-rescue coordinator giving calm, human-like radio guidance to the operator. Follow mission and environment rules: rescue all survivors, prioritize visible reachable survivors who are still saveable, nearest first, use matching keys for locked doors, unlocked doors can be opened, carry only one key, avoid lava, and never mention unreachable objects. Instructions must be directional and action-focused, always using North, South, East, West, with no coordinates, step counts, or visible reasoning. From the current state {obs}, choose one immediate objective by prioritizing the nearest reachable visible saveable survivor, then the next saveable survivor if relevant; otherwise choose the best remaining alive victim, then the nearest reachable survivor or key, or finally explore visible areas that may open a new path. Output either a sparse one-sentence instruction or a detailed 3–4 sentence radio briefing, always concise, natural, rule-compliant, and wrapped strictly as &lt;START&gt; … &lt;END&gt;.</p>
+</div>
 <ul>
 <li><strong>Grid-based world:</strong> each cell represents an object such as empty space, wall, victim, lava, door, or key.</li>
 <li><strong>Reachability check:</strong> BFS determines which targets are reachable and their distance from the player.</li>
 <li>Models: <strong>OpenAI</strong> and <strong>Gemini</strong>.</li>
 </ul>
-<div class="cards vertical">
+<div class="cards">
 <div class="card">
 <p><span class="card-title">Guidance style</span> Short, calm, action-focused guidance.</p>
 </div>
@@ -245,12 +251,11 @@ Elahe Oveisi · Dr.&nbsp;Hemanth Manjunatha
 <p><span class="card-title">Mission rules</span> Avoid lava, use keys, open doors.</p>
 </div>
 </div>
-</div><div class="column" style="width:46%;">
-<p><strong>No coordinates, step counts, or visible reasoning.</strong></p>
-</div></div>
 </section>
 <section id="eye-tracking-features" class="slide level2">
 <h2>Eye-tracking <span class="accent">features</span></h2>
+<div class="columns">
+<div class="column" style="width:58%;">
 <table class="caption-top">
 <thead>
 <tr class="header">
@@ -289,6 +294,9 @@ Elahe Oveisi · Dr.&nbsp;Hemanth Manjunatha
 </tr>
 </tbody>
 </table>
+</div><div class="column" style="width:42%;">
+<p><img data-src="assets/eyetracker_setup.png" style="width:100.0%" alt="Participant playing the SAR game while a Tobii eye tracker records gaze"></p>
+</div></div>
 <div class="punchline">
 <p>A Tobii remote eye tracker was calibrated before the task; <strong>LSL synchronized gaze, game events, player actions, and LLM message timing</strong>.</p>
 </div>
@@ -405,6 +413,13 @@ Elahe Oveisi · Dr.&nbsp;Hemanth Manjunatha
 .compact-results table td:first-child {
   white-space: nowrap;
 }
+.compact-results table td,
+.compact-results table td strong {
+  color: #ffffff !important;
+}
+.compact-results table td:last-child strong {
+  color: #EC672C !important;
+}
 </style>
 <div class="compact-results">
 <table class="caption-top">
@@ -500,6 +515,30 @@ Elahe Oveisi · Dr.&nbsp;Hemanth Manjunatha
 <div class="punchline">
 <p>A plausible interpretation is that experts <strong>cross-check the advice against the environment</strong>, rather than simply following it.</p>
 </div>
+<div class="flow-diagram">
+<div class="flow-step">
+<p><strong>LLM guidance received</strong></p>
+</div>
+<div class="flow-arrow">
+<p>↓</p>
+</div>
+<div class="flow-branch">
+<div class="flow-step">
+<p><strong>Expert</strong></p>
+<p>Cross-checks guidance against the environment (scans, verifies)</p>
+</div>
+<div class="flow-step secondary">
+<p><strong>Novice</strong></p>
+<p>Follows guidance directly</p>
+</div>
+</div>
+<div class="flow-arrow">
+<p>↓</p>
+</div>
+<div class="flow-step">
+<p>Action executed</p>
+</div>
+</div>
 </section>
 <section id="llm-guidance-redirects-attention" class="slide level2">
 <h2>LLM guidance <span class="accent">redirects attention</span></h2>
@@ -514,14 +553,6 @@ Elahe Oveisi · Dr.&nbsp;Hemanth Manjunatha
 <p><span class="label">Chat-area fixation</span></p>
 <p><span class="detail">More fixation allocation · 95% CI: 0.061 to 0.123 · q &lt; .0001</span></p>
 </div>
-</div>
-<div class="hook center">
-<p>Attention moved toward the LLM guidance as engagement with the game decreased.</p>
-</div>
-</section>
-<section id="guidance-also-changes-fixation-and-pupil-behavior" class="slide level2">
-<h2>Guidance also changes <span class="accent">fixation and pupil behavior</span></h2>
-<div class="metric-grid">
 <div class="metric">
 <p><span class="value accent">−19.33 ms</span></p>
 <p><span class="label">Mean fixation duration</span></p>
@@ -582,7 +613,7 @@ Elahe Oveisi · Dr.&nbsp;Hemanth Manjunatha
 <section id="limitations-and-future-work" class="slide level2">
 <h2>Limitations and <span class="accent">future work</span></h2>
 <div class="columns">
-<div class="column" style="width:43%;">
+<div class="column" style="width:34%;">
 <h3 id="limitations">Limitations</h3>
 <ul>
 <li>Small sample</li>
@@ -590,32 +621,23 @@ Elahe Oveisi · Dr.&nbsp;Hemanth Manjunatha
 <li>Simulated grid-world task</li>
 <li>Behavior may differ from real SAR operations</li>
 </ul>
-</div><div class="column" style="width:57%;">
+</div><div class="column" style="width:66%;">
 <h3 id="future-work">Future work</h3>
-<ul>
-<li><strong>Trust manipulation:</strong> Study how operators respond when the LLM makes mistakes.</li>
-<li><strong>Workload-aware guidance:</strong> Reduce unnecessary cognitive demand.</li>
-<li><strong>Situation awareness:</strong> Embed cognitive-process measures in the task.</li>
-<li><strong>Adaptive LLM guidance:</strong> Tailor assistance to the operator and context.</li>
-</ul>
-</div></div>
-</section>
-<section id="future-studies" class="slide level2">
-<h2><span class="accent">Future studies</span></h2>
 <div class="cards">
 <div class="card">
-<p><span class="card-title">Reliability</span> Manipulate guidance reliability and evaluate trust calibration.</p>
+<p><span class="card-title">Trust &amp; reliability</span> Manipulate guidance reliability and study how operators respond and calibrate trust when the LLM makes mistakes.</p>
 </div>
 <div class="card">
-<p><span class="card-title">Real-time adaptation</span> Use performance and physiological signals to decide when assistance is needed.</p>
+<p><span class="card-title">Adaptive, workload-aware guidance</span> Use performance and physiological signals to tailor assistance and reduce unnecessary cognitive demand.</p>
 </div>
 <div class="card">
-<p><span class="card-title">Situation awareness</span> Measure global and local awareness during LLM-supported decisions.</p>
+<p><span class="card-title">Situation awareness</span> Embed cognitive-process measures to capture global and local awareness during LLM-supported decisions.</p>
 </div>
 <div class="card secondary">
 <p><span class="card-title">Generalization</span> Test larger samples and more realistic SAR scenarios.</p>
 </div>
 </div>
+</div></div>
 <div class="punchline">
 <p>The next step is moving from <strong>static guidance</strong> toward <strong>reliable, adaptive human–AI teaming</strong>.</p>
 </div>
