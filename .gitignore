@@ -3,3 +3,5 @@
 *_files/
 *.html
 !presentation/smc.html
+!presentation/smc_files/
+!presentation/smc_files/**
