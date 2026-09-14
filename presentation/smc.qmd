@@ -1,8 +1,8 @@
 ---
 title: "LLM-Mediated Human–AI Interaction in Search and Rescue:<br>[Impact of Expertise on Attentional Allocation]{.accent}"
 subtitle: "Human performance, visual attention, and expertise under LLM guidance"
-author: "Elahe Oveisi · Dr. Hemanth Manjunatha"
-institute: "Department of Mechanical and Aerospace Engineering · Oklahoma State University"
+author: "Elahe Oveisi and Dr. Hemanth Manjunatha"
+institute: "Oklahoma State University"
 format:
   revealjs:
     theme: [default, theme.scss]
