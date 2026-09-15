@@ -132,7 +132,7 @@ The study connects **task performance**, **visual behavior**, and **expertise** 
 
 ---
 
-## Demonstration [video]{.accent} 2
+## [VS]{.accent} (Visual Search) and [MOT]{.accent} (Multiple Object Tracking) {id="VS (Visual Search) and MOT (Multiple Object Tracking)"}
 
 ```{=html}
 <div style="display:flex; gap:32px; align-items:flex-start;">
