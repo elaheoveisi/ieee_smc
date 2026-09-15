@@ -124,7 +124,7 @@ The study connects **task performance**, **visual behavior**, and **expertise** 
 
 ---
 
-## [Game]{.accent} play
+## [Game]{.accent} play {id="Game Play"}
 
 <video controls width="90%" style="display:block; margin:auto; max-height:70vh;">
   <source src="assets/Mediaa.mp4" type="video/mp4">
