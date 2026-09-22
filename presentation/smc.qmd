@@ -97,7 +97,7 @@ The study connects **task performance**, **visual behavior**, and **expertise** 
 :::
 ::: {.column width="44%"}
 
-::: {.stats}
+::: {.stats .grid-2}
 ::: {.stat}
 [13]{.stat-number}
 [Participants]{.stat-label}

@@ -586,6 +586,11 @@ $heading-font: "Rubik", sans-serif !default;
     margin-top: 1.2rem;
 }
 
+/* Add .grid-2 to force a fixed 2-column grid instead of auto-fit: ::: {.stats .grid-2} */
+.stats.grid-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .stat {
     border-left: 3px solid $primary-color;
     padding-left: 0.8rem;
