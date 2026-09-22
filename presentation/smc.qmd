@@ -184,8 +184,6 @@ Avoid lava, use keys, open doors.
 
 ## Eye-tracking [features]{.accent}
 
-::: {.columns}
-::: {.column width="58%"}
 | Feature | What it shows |
 |---|---|
 | Fixation count | How often the participant focused on an area |
@@ -195,11 +193,6 @@ Avoid lava, use keys, open doors.
 | Game-area fixation time | Attention to the SAR environment |
 | Chat-panel fixation time | Attention to the LLM guidance |
 | AOI transitions | Switching gaze between game and chat |
-:::
-::: {.column width="42%"}
-![](assets/participant.png){fig-alt="Participant playing the SAR game while a Tobii eye tracker records gaze" width="100%"}
-:::
-:::
 
 ::: {.punchline}
 :::
