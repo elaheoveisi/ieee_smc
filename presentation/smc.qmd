@@ -368,21 +368,6 @@ LLM support did not only change **where** participants looked; it also changed *
 
 ---
 
-## Expertise [moderates visual behavior]{.accent}
-
-| Measure | LLM × expertise β | 95% CI | q |
-|---|---:|---:|---:|
-| **Game-area fixation** | **+0.114** | 0.045 to 0.183 | **< .01** |
-| **Fixation count** | **+0.815** | 0.145 to 1.485 | **< .05** |
-| **Saccade count** | **+0.961** | 0.324 to 1.598 | **< .01** |
-| **Pupil-size SD** | **−0.051** | −0.092 to −0.010 | **< .05** |
-
-::: {.punchline}
-Experts showed a **smaller shift away from the game** and stronger changes in visual activity under LLM support.
-:::
-
----
-
 ## Limitations and [future work]{.accent}
 
 ::: {.columns}
