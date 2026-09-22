@@ -54,7 +54,7 @@ Operators must locate and recover people while conditions change quickly.
 ::: {.columns}
 ::: {.column width="62%"}
 
-::: {.cards}
+::: {.cards .grid-2}
 ::: {.card}
 [Performance]{.card-title}
 
