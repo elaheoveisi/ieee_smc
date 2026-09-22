@@ -26,7 +26,7 @@ title-slide-attributes:
   data-background-color: "#252525"
 ---
 
-## Search and Rescue is a [time-critical]{.accent} human–AI setting
+## Search and Rescue Is A [Time-critical]{.accent} Human–AI Setting
 
 ::: {.columns}
 ::: {.column width="47%"}
@@ -49,7 +49,7 @@ Operators must locate and recover people while conditions change quickly.
 
 ---
 
-## Research questions and [contribution]{.accent}
+## Research Questions and [Contribution]{.accent}
 
 ::: {.columns}
 ::: {.column width="30%"}
@@ -95,7 +95,7 @@ The study connects **task performance**, **visual behavior**, and **expertise** 
 
 ---
 
-## Study design in [brief]{.accent}
+## Study Design In [Brief]{.accent}
 
 ::: {.columns}
 ::: {.column width="56%"}
@@ -130,7 +130,7 @@ The study connects **task performance**, **visual behavior**, and **expertise** 
 
 ---
 
-## [Game]{.accent} play {id="Game Play"}
+## [Game]{.accent} Play {id="Game Play"}
 
 <video controls width="90%" style="display:block; margin:auto; max-height:70vh;">
   <source src="assets/Mediaa.mp4" type="video/mp4">
@@ -155,7 +155,7 @@ The study connects **task performance**, **visual behavior**, and **expertise** 
 
 ---
 
-## How the LLM was [prompted]{.accent} {.prompt-slide}
+## How The LLM Was [Prompted]{.accent} {.prompt-slide}
 
 ::: {.llm-message}
 You are a search-and-rescue coordinator giving calm, human-like radio guidance to the operator. Follow mission and environment rules: rescue all survivors, prioritize visible reachable survivors who are still saveable, nearest first, use matching keys for locked doors, unlocked doors can be opened, carry only one key, avoid lava, and never mention unreachable objects. Instructions must be directional and action-focused, always using North, South, East, West, with no coordinates, step counts, or visible reasoning. From the current state {obs}, choose one immediate objective by prioritizing the nearest reachable visible saveable survivor, then the next saveable survivor if relevant; otherwise choose the best remaining alive victim, then the nearest reachable survivor or key, or finally explore visible areas that may open a new path. Output either a sparse one-sentence instruction or a detailed 3–4 sentence radio briefing, always concise, natural, rule-compliant, and wrapped strictly as \<START\> ... \<END\>.
@@ -182,7 +182,7 @@ Avoid lava, use keys, open doors.
 
 ---
 
-## Eye-tracking [features]{.accent}
+## Eye-tracking [Features]{.accent}
 
 | Feature | What it shows |
 |---|---|
@@ -199,7 +199,7 @@ Avoid lava, use keys, open doors.
 
 ---
 
-## Measures and [analysis]{.accent}
+## Measures and [Analysis]{.accent}
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -238,7 +238,7 @@ Avoid lava, use keys, open doors.
 
 ---
 
-## LLM guidance improved [performance]{.accent}
+## LLM Guidance Improved [Performance]{.accent}
 
 | Outcome | Effect | β | SE | q |
 |---|---:|---:|---:|---:|
@@ -254,7 +254,7 @@ Avoid lava, use keys, open doors.
 
 ---
 
-## LLM guidance changed [visual behavior]{.accent}
+## LLM Guidance Changed [Visual Behavior]{.accent}
 
 <style>
 .compact-results table td:first-child {
@@ -286,7 +286,7 @@ Avoid lava, use keys, open doors.
 
 ---
 
-## Expertise changes [how guidance is used]{.accent}
+## Expertise Changes [How Guidance Is Used]{.accent}
 
 ::: {.cards}
 ::: {.card}
@@ -328,7 +328,7 @@ Follows guidance directly
 
 ---
 
-## Limitations and [future work]{.accent}
+## Limitations and [Future Work]{.accent}
 
 ::: {.columns}
 ::: {.column width="34%"}
