@@ -83,7 +83,7 @@ The study connects **task performance**, **visual behavior**, and **expertise** 
 
 :::
 ::: {.column width="38%"}
-![](assets/eyetracker_setup.png){fig-alt="Participant using an eye tracker while playing the search-and-rescue game" width="100%"}
+![](assets/participant.png){fig-alt="Participant using an eye tracker while playing the search-and-rescue game" width="100%"}
 :::
 :::
 
@@ -191,7 +191,7 @@ Avoid lava, use keys, open doors.
 | AOI transitions | Switching gaze between game and chat |
 :::
 ::: {.column width="42%"}
-![](assets/eyetracker_setup.png){fig-alt="Participant playing the SAR game while a Tobii eye tracker records gaze" width="100%"}
+![](assets/participant.png){fig-alt="Participant playing the SAR game while a Tobii eye tracker records gaze" width="100%"}
 :::
 :::
 
