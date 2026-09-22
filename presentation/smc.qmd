@@ -52,9 +52,9 @@ Operators must locate and recover people while conditions change quickly.
 ## Research Questions and [Contribution]{.accent}
 
 ::: {.columns}
-::: {.column width="62%"}
+::: {.column width="42%"}
 
-::: {.cards .grid-2}
+::: {.cards .vertical}
 ::: {.card}
 [Performance]{.card-title}
 
@@ -77,16 +77,16 @@ Can a controlled simulation support repeatable human–AI teaming research?
 :::
 :::
 
-::: {.punchline}
-The study connects **task performance**, **visual behavior**, and **expertise** in one LLM-mediated SAR experiment.
 :::
-
-:::
-::: {.column width="38%"}
+::: {.column width="58%"}
 ```{=html}
 <img src="assets/participant.png" alt="Participant using an eye tracker while playing the search-and-rescue game">
 ```
 :::
+:::
+
+::: {.punchline}
+The study connects **task performance**, **visual behavior**, and **expertise** in one LLM-mediated SAR experiment.
 :::
 
 ---
