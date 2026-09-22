@@ -52,23 +52,32 @@ Operators must locate and recover people while conditions change quickly.
 ## Research questions and [contribution]{.accent}
 
 ::: {.columns}
-::: {.column width="62%"}
+::: {.column width="30%"}
 
-::: {.cards .grid-2}
+::: {.cards .vertical}
 ::: {.card}
 [Performance]{.card-title}
 
 Does LLM guidance improve task outcomes?
 :::
 ::: {.card}
-[Attention]{.card-title}
-
-How does guidance change visual attention and eye-tracking metrics?
-:::
-::: {.card}
 [Expertise]{.card-title}
 
 Does expertise moderate these effects?
+:::
+:::
+
+:::
+::: {.column width="40%" .center-v}
+![](assets/participant.png){fig-alt="Participant using an eye tracker while playing the search-and-rescue game" width="100%"}
+:::
+::: {.column width="30%"}
+
+::: {.cards .vertical}
+::: {.card}
+[Attention]{.card-title}
+
+How does guidance change visual attention and eye-tracking metrics?
 :::
 ::: {.card .secondary}
 [Testbed]{.card-title}
@@ -77,14 +86,11 @@ Can a controlled simulation support repeatable human–AI teaming research?
 :::
 :::
 
-::: {.punchline}
-The study connects **task performance**, **visual behavior**, and **expertise** in one LLM-mediated SAR experiment.
+:::
 :::
 
-:::
-::: {.column width="38%"}
-![](assets/participant.png){fig-alt="Participant using an eye tracker while playing the search-and-rescue game" width="100%"}
-:::
+::: {.punchline}
+The study connects **task performance**, **visual behavior**, and **expertise** in one LLM-mediated SAR experiment.
 :::
 
 ---
