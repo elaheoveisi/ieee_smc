@@ -78,10 +78,8 @@ Can a controlled simulation support repeatable human–AI teaming research?
 :::
 
 :::
-::: {.column width="58%"}
-```{=html}
-<img src="assets/participant.png" alt="Participant using an eye tracker while playing the search-and-rescue game">
-```
+::: {.column width="40%" .center-v}
+![](assets/participant.png){fig-alt="Participant using an eye tracker while playing the search-and-rescue game" width="100%"}
 :::
 :::
 
