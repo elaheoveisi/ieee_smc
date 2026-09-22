@@ -17,6 +17,7 @@ format:
     navigation-mode: linear
     controls: true
     progress: true
+    include-after-body: prompt-animation.html
 resources:
   - assets/Mediaa.mp4
   - assets/Media1 (1).mp4
@@ -152,7 +153,7 @@ The study connects **task performance**, **visual behavior**, and **expertise** 
 ## How The LLM Was [Prompted]{.accent} {.prompt-slide}
 
 ::: {.llm-message}
-You are a search-and-rescue coordinator giving calm, human-like radio guidance to the operator. Follow mission and environment rules: rescue all survivors, prioritize visible reachable survivors who are still saveable, nearest first, use matching keys for locked doors, unlocked doors can be opened, carry only one key, avoid lava, and never mention unreachable objects. Instructions must be directional and action-focused, always using North, South, East, West, with no coordinates, step counts, or visible reasoning. From the current state {obs}, choose one immediate objective by prioritizing the nearest reachable visible saveable survivor, then the next saveable survivor if relevant; otherwise choose the best remaining alive victim, then the nearest reachable survivor or key, or finally explore visible areas that may open a new path. Output either a sparse one-sentence instruction or a detailed 3–4 sentence radio briefing, always concise, natural, rule-compliant, and wrapped strictly as \<START\> ... \<END\>.
+[You are a search-and-rescue coordinator giving calm, human-like radio guidance to the operator.]{.prompt-part data-category="style" data-note="Sets the coordinator role and a calm, human-like radio voice."} [Follow mission and environment rules: rescue all survivors,]{.prompt-part data-category="rules" data-note="Defines the mission: rescue every survivor."} [prioritize visible reachable survivors who are still saveable, nearest first,]{.prompt-part data-category="priority" data-note="Ranks targets by visibility, reachability, saveability, and distance."} [use matching keys for locked doors, unlocked doors can be opened, carry only one key, avoid lava,]{.prompt-part data-category="rules" data-note="Defines door and key mechanics, carrying capacity, and hazard avoidance."} [and never mention unreachable objects.]{.prompt-part data-category="rules" data-note="Restricts guidance to reachable objects."} [Instructions must be directional and action-focused, always using North, South, East, West, with no coordinates, step counts, or visible reasoning.]{.prompt-part data-category="style" data-note="Specifies how to communicate: cardinal directions and direct actions."} [From the current state {obs}, choose one immediate objective by prioritizing the nearest reachable visible saveable survivor, then the next saveable survivor if relevant;]{.prompt-part data-category="priority" data-note="Uses the current observation to choose the next rescue objective."} [otherwise choose the best remaining alive victim, then the nearest reachable survivor or key, or finally explore visible areas that may open a new path.]{.prompt-part data-category="priority" data-note="Defines the fallback order when the preferred rescue target is unavailable."} [Output either a sparse one-sentence instruction or a detailed 3–4 sentence radio briefing, always concise, natural,]{.prompt-part data-category="style" data-note="Sets the briefing length and concise, natural wording."} [rule-compliant,]{.prompt-part data-category="rules" data-note="Requires the final instruction to obey the mission rules."} [and wrapped strictly as \<START\> ... \<END\>.]{.prompt-part data-category="style" data-note="Defines the output format with START and END delimiters."}
 :::
 
 - **Grid-based world:** each cell represents an object such as empty space, wall, victim, lava, door, or key.
@@ -160,19 +161,29 @@ You are a search-and-rescue coordinator giving calm, human-like radio guidance t
 - Models: **OpenAI** and **Gemini**.
 
 ::: {.cards}
-::: {.card}
+::: {.card data-prompt-category="style"}
 [Guidance style]{.card-title}
 Short, calm, action-focused guidance.
 :::
-::: {.card}
+::: {.card data-prompt-category="priority"}
 [Priority]{.card-title}
 Reachable survivors first.
 :::
-::: {.card}
+::: {.card data-prompt-category="rules"}
 [Mission rules]{.card-title}
 Avoid lava, use keys, open doors.
 :::
 :::
+
+```{=html}
+<div class="prompt-tour" role="group" aria-label="Prompt animation controls">
+  <button type="button" data-tour="previous" aria-label="Previous prompt section">&#8592;</button>
+  <button type="button" data-tour="play">Play</button>
+  <button type="button" data-tour="next" aria-label="Next prompt section">&#8594;</button>
+  <button type="button" data-tour="reset">Show all</button>
+  <span class="prompt-explanation" aria-live="polite">Select Play to explore each part of the prompt.</span>
+</div>
+```
 
 ---
 

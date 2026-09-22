@@ -3,5 +3,6 @@
 *_files/
 *.html
 !presentation/smc.html
+!presentation/prompt-animation.html
 !presentation/smc_files/
 !presentation/smc_files/**
