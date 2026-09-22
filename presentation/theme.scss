@@ -334,6 +334,15 @@ $heading-font: "Rubik", sans-serif !default;
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
+/* Make the participant photo fill the full height of its column,
+   matching the stacked cards beside it, instead of sitting short at the top. */
+.reveal #research-questions-and-contribution .column img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* Stretch the eye-tracking slide's table to fill the full slide width. */
 .reveal #eye-tracking-features {
     table {
