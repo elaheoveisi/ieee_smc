@@ -334,8 +334,16 @@ $heading-font: "Rubik", sans-serif !default;
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
-/* Make the participant photo fill the full height of its column,
-   matching the stacked cards beside it, instead of sitting short at the top. */
+/* Make the participant photo fill the full height of its column, matching
+   the stacked cards beside it. Quarto's own .column/.columns utility
+   classes force display:inline-block (for margin-content layout), which
+   overrides pandoc's flex-based two-column div — so columns never stretch
+   to a shared height on their own. Re-enable flex + stretch just here. */
+.reveal #research-questions-and-contribution .columns {
+    display: flex;
+    align-items: stretch;
+}
+
 .reveal #research-questions-and-contribution .column img {
     display: block;
     width: 100%;
