@@ -329,45 +329,6 @@ Follows guidance directly
 
 ---
 
-## LLM guidance [redirects attention]{.accent}
-
-::: {.metric-grid}
-::: {.metric}
-[−0.184]{.value .accent}
-
-[Game-area fixation]{.label}
-
-[Less fixation allocation · 95% CI: −0.229 to −0.139 · q < .0001]{.detail}
-:::
-::: {.metric}
-[+0.092]{.value .accent}
-
-[Chat-area fixation]{.label}
-
-[More fixation allocation · 95% CI: 0.061 to 0.123 · q < .0001]{.detail}
-:::
-::: {.metric}
-[−19.33 ms]{.value .accent}
-
-[Mean fixation duration]{.label}
-
-[Shorter fixations · 95% CI: −31.509 to −7.143 · q < .01]{.detail}
-:::
-::: {.metric}
-[+0.122]{.value .accent}
-
-[Pupil-size SD]{.label}
-
-[Greater pupil variability · 95% CI: 0.095 to 0.149 · q < .0001]{.detail}
-:::
-:::
-
-::: {.punchline}
-LLM support did not only change **where** participants looked; it also changed **how** they visually processed the task.
-:::
-
----
-
 ## Limitations and [future work]{.accent}
 
 ::: {.columns}
