@@ -212,7 +212,7 @@ Avoid lava, use keys, open doors.
 :::
 ::: {.column width="50%"}
 
-::: {.stats}
+::: {.stats .grid-2}
 ::: {.stat}
 [13]{.stat-number}
 [Participants]{.stat-label}
@@ -345,7 +345,7 @@ Follows guidance directly
 
 ### Future work
 
-::: {.cards}
+::: {.cards .grid-2}
 ::: {.card}
 [Trust & reliability]{.card-title}
 Test how LLM errors affect operator responses and trust.
