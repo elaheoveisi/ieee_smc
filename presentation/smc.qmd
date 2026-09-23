@@ -201,7 +201,9 @@ We study how humans and AI **process information together**, using **eye trackin
 
 **Mixed-effects model:** outcome = LLM condition + LLM × expertise + expertise + participant random intercept.
 
+::: {style="text-align:center;"}
 ![](assets/setup-annotated.png){fig-alt="Annotated photo of a participant at the game and eye-tracker setup, with an example LLM guidance chat message shown alongside" width="60%"}
+:::
 
 ---
 
