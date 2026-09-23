@@ -248,12 +248,6 @@ Avoid lava, use keys, open doors.
 
 ---
 
-## [Results]{.accent}
-
-![](assets/results-chart.png){fig-alt="Model coefficients across study outcomes, showing bar charts of LLM support, expertise, and LLM by expertise effects for victims per step, total reward, saved victims, fixation duration, pupil-size SD, game-area fixation, chat-area fixation, fixation count, and saccade count" width="100%"}
-
----
-
 ## LLM Guidance Improved [Performance]{.accent}
 
 | Outcome | Effect | β | SE | q |
@@ -305,7 +299,9 @@ Avoid lava, use keys, open doors.
 ## [Results]{.accent} {id="model-coefficients"}
 
 ```{=html}
-<img src="assets/SMC_diverging_bar_plot_1000dpi_no_title_fixed.png" alt="Model coefficients across nine study outcomes, comparing LLM support, expertise, and their interaction. Filled bars indicate statistically significant effects; outlined bars indicate nonsignificant effects." style="display:block; width:100%; height:580px; object-fit:contain; margin:0 auto; border-radius:0; box-shadow:none;">
+<div style="display:flex; align-items:center; justify-content:center; width:100%; height:580px;">
+<img class="nostretch" src="assets/SMC_diverging_bar_plot_1000dpi_no_title_fixed.png" alt="Model coefficients across nine study outcomes, comparing LLM support, expertise, and their interaction. Filled bars indicate statistically significant effects; outlined bars indicate nonsignificant effects." style="display:block; width:auto; height:100%; max-width:100%; max-height:100%; object-fit:contain; margin:0; border-radius:0; box-shadow:none;">
+</div>
 ```
 
 ---
