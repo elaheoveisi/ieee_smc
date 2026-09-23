@@ -309,7 +309,6 @@ Follows guidance directly
 
 - Small sample
 - Simulated grid-world task
-- Behavior may differ from real SAR operations
 
 :::
 ::: {.column width="66%"}
