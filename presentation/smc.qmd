@@ -73,7 +73,7 @@ Does expertise moderate these effects?
 ::: {.card .secondary}
 [Testbed]{.card-title}
 
-Can a controlled simulation support repeatable human–AI teaming research?
+A controlled simulation supports repeatable human–AI teaming research.
 :::
 :::
 
