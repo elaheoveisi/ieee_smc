@@ -291,6 +291,14 @@ Avoid lava, use keys, open doors.
 
 ---
 
+## {id="model-coefficients" background-color="#ffffff"}
+
+```{=html}
+<img src="assets/SMC_diverging_bar_plot_1000dpi_large_bold.png" alt="Model coefficients across nine study outcomes, comparing LLM support, expertise, and their interaction. Filled bars indicate statistically significant effects; outlined bars indicate nonsignificant effects." style="display:block; width:100%; height:660px; object-fit:contain; margin:0 auto; border-radius:0; box-shadow:none;">
+```
+
+---
+
 ## Expertise Changes [How Guidance Is Used]{.accent}
 
 ::: {.cards}
