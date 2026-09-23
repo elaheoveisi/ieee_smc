@@ -86,7 +86,7 @@ We study how humans and AI **process information together**, using **eye trackin
 :::
 ::: {.stat}
 [3]{.stat-number}
-[Trials each]{.stat-label}
+[Trials each (randomized)]{.stat-label}
 :::
 ::: {.stat}
 [2 + 1]{.stat-number}
