@@ -303,10 +303,6 @@ Shifted more attention away from the game, consistent with greater reliance on t
 :::
 :::
 
-::: {.punchline}
-A plausible interpretation is that experts **cross-check the advice against the environment**, rather than simply following it.
-:::
-
 ::: {.flow-diagram}
 ::: {.flow-step}
 **LLM guidance received**
