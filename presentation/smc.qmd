@@ -247,6 +247,12 @@ Avoid lava, use keys, open doors.
 
 ---
 
+## [Results]{.accent}
+
+![](assets/results-chart.png){fig-alt="Model coefficients across study outcomes, showing bar charts of LLM support, expertise, and LLM by expertise effects for victims per step, total reward, saved victims, fixation duration, pupil-size SD, game-area fixation, chat-area fixation, fixation count, and saccade count" width="100%"}
+
+---
+
 ## LLM Guidance Improved [Performance]{.accent}
 
 | Outcome | Effect | β | SE | q |
