@@ -196,36 +196,8 @@ We study how humans and AI **process information together**, using **eye trackin
 
 ## Data Collection and [Analysis]{.accent}
 
-::: {.columns}
-::: {.column width="50%"}
-
 - Synchronized data streams via **LSL (Lab Streaming Layer)**
 - Gaze and pupil data recorded with a **Tobii eye tracker**
-
-:::
-::: {.column width="50%"}
-
-::: {.stats .grid-2}
-::: {.stat}
-[13]{.stat-number}
-[Participants]{.stat-label}
-:::
-::: {.stat}
-[3]{.stat-number}
-[Randomized trials]{.stat-label}
-:::
-::: {.stat}
-[60 Hz]{.stat-number}
-[Eye-tracker rate]{.stat-label}
-:::
-::: {.stat}
-[K = 2]{.stat-number}
-[Expertise clusters]{.stat-label}
-:::
-:::
-
-:::
-:::
 
 **Mixed-effects model:** outcome = LLM condition + LLM × expertise + expertise + participant random intercept.
 
