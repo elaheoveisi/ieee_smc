@@ -334,7 +334,7 @@ Follows guidance directly
 
 ### Limitations
 
-- Small sample size
+- Sample size
 - Simulated grid-world task
 
 :::
