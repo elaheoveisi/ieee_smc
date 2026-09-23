@@ -188,7 +188,6 @@ We study how humans and AI **process information together**, using **eye trackin
 | Pupil diameter SD | Variation in pupil size, related to workload |
 | Game-area fixation time | Attention to the SAR environment |
 | Chat-panel fixation time | Attention to the LLM guidance |
-| AOI transitions | Switching gaze between game and chat |
 
 ::: {.punchline}
 :::
