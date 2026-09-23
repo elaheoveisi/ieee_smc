@@ -334,7 +334,6 @@ Follows guidance directly
 ### Limitations
 
 - Small sample
-- Task-based expertise classification
 - Simulated grid-world task
 - Behavior may differ from real SAR operations
 
@@ -354,11 +353,11 @@ Tailor help using performance and body signals to reduce mental workload.
 :::
 ::: {.card}
 [Situation awareness]{.card-title}
-Measure awareness of nearby hazards and the overall mission during LLM-guided decisions.
+Use this data to infer workload, situational awareness, and human–AI interaction patterns.
 :::
 ::: {.card .secondary}
-[Generalization]{.card-title}
-Test larger samples and more realistic SAR scenarios.
+[Other domains]{.card-title}
+Apply this approach to other human–AI teaming domains beyond search and rescue.
 :::
 :::
 
