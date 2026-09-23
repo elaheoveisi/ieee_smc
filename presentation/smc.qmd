@@ -114,7 +114,7 @@ We study how humans and AI **process information together**, using **eye trackin
 
 ---
 
-## [VS]{.accent} (Visual Search) and [MOT]{.accent} (Multiple Object Tracking) {id="VS (Visual Search) and MOT (Multiple Object Tracking)"}
+## [Expertise Level]{.accent} {id="Expertise Level"}
 
 ```{=html}
 <div style="display:flex; gap:32px; align-items:stretch; justify-content:center;">
