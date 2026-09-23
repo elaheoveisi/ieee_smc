@@ -38,7 +38,7 @@ Operators must locate and recover people while conditions change quickly.
 
 - Missions occur in **challenging environments**
 - Decisions must be made under **time pressure**
-- Need [reliable partner]{.accent} to help humans
+- Need [**reliable partner**]{.accent} to help humans
 
 :::
 ::: {.column width="53%"}
@@ -84,7 +84,7 @@ A controlled simulation supports repeatable human–AI teaming research.
 :::
 
 ::: {.punchline}
-The study connects **task performance**, **visual behavior**, and **expertise** in one LLM-mediated SAR experiment.
+We study how humans and AI **process information together**, using **eye tracking** to inform **adaptive AI** for the future.
 :::
 
 ---
