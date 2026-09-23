@@ -37,7 +37,6 @@ Operators must locate and recover people while conditions change quickly.
 :::
 
 - Missions occur in **challenging environments**
-- Teams increasingly rely on **drones and digital decision aids**
 - Decisions must be made under **time pressure**
 - Guidance is useful only if it supports — rather than disrupts — attention
 
