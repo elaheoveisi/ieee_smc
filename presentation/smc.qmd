@@ -20,7 +20,7 @@ format:
     include-after-body: prompt-animation.html
 resources:
   - assets/Mediaa.mp4
-  - assets/Media1 (1).mp4
+  - assets/Media 1 (1).mp4
 title-slide-attributes:
   data-background-image: assets/background.jpg
   data-background-opacity: "0.45"
@@ -120,7 +120,7 @@ We study how humans and AI **process information together**, using **eye trackin
 <div style="display:flex; gap:32px; align-items:stretch; justify-content:center;">
 <div style="flex:1; min-width:0; display:flex; align-items:center; justify-content:center;">
 <video controls style="display:block; width:100%; height:480px; object-fit:contain;">
-  <source src="assets/Media1%20(1).mp4" type="video/mp4">
+  <source src="assets/Media%201%20(1).mp4" type="video/mp4">
 </video>
 </div>
 <div style="flex:1; min-width:0; display:flex; align-items:center; justify-content:center;">
