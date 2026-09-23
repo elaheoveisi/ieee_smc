@@ -349,7 +349,7 @@ Test how LLM errors affect operator responses and trust.
 :::
 ::: {.card}
 [Adaptive guidance]{.card-title}
-Tailor help using performance and body signals to reduce mental workload.
+Tailor help using performance and physiological signals to reduce mental workload.
 :::
 ::: {.card}
 [Situation awareness]{.card-title}
