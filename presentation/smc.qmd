@@ -54,28 +54,10 @@ Operators must locate and recover people while conditions change quickly.
 ::: {.columns}
 ::: {.column width="42%"}
 
-::: {.cards .vertical}
-::: {.card}
-[Performance]{.card-title}
-
-Does LLM guidance improve task outcomes?
-:::
-::: {.card}
-[Attention]{.card-title}
-
-How does guidance change visual attention and eye-tracking metrics?
-:::
-::: {.card}
-[Expertise]{.card-title}
-
-Does expertise moderate these effects?
-:::
-::: {.card .secondary}
-[Testbed]{.card-title}
-
-A controlled simulation supports repeatable human–AI teaming research.
-:::
-:::
+- **Performance:** Does LLM guidance improve task outcomes?
+- **Attention:** How does guidance change visual attention and eye-tracking metrics?
+- **Expertise:** Does expertise moderate these effects?
+- **Testbed:** A controlled simulation supports repeatable human–AI teaming research.
 
 :::
 ::: {.column width="40%" .center-v}
@@ -83,7 +65,7 @@ A controlled simulation supports repeatable human–AI teaming research.
 :::
 :::
 
-::: {.punchline}
+::: {.card}
 We study how humans and AI **process information together**, using **eye tracking** to inform **adaptive AI** for the future.
 :::
 
