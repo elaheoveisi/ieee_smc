@@ -90,7 +90,7 @@ We study how humans and AI **process information together**, using **eye trackin
 :::
 ::: {.stat}
 [2 + 1]{.stat-number}
-[LLM + control]{.stat-label}
+[LLM + baseline]{.stat-label}
 :::
 ::: {.stat}
 [15 min]{.stat-number}
