@@ -175,10 +175,13 @@ We study how humans and AI **process information together**, using **eye trackin
 
 ---
 
-## Eye-tracking [Features]{.accent}
+## Task and Eye-tracking [Features]{.accent}
 
 | Feature | What it shows |
 |---|---|
+| **Victims per step** | Rescue efficiency over time |
+| **Total reward** | Overall task performance |
+| **Saved victims** | Mission success |
 | Fixation count | How often the participant focused on an area |
 | Fixation duration | How long the participant looked at one area |
 | Saccade duration | Duration of fast eye movements |
