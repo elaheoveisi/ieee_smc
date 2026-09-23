@@ -38,7 +38,7 @@ Operators must locate and recover people while conditions change quickly.
 
 - Missions occur in **challenging environments**
 - Decisions must be made under **time pressure**
-- Guidance is useful only if it supports — rather than disrupts — attention
+- Need [reliable partner]{.accent} to help humans
 
 :::
 ::: {.column width="53%"}
