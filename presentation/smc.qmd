@@ -129,6 +129,8 @@ We study how humans and AI **process information together**, using **eye trackin
 </div>
 ```
 
+- **Expertise labeling:** K-means clustering (K = 2) grouped participants into expert vs. novice
+
 ---
 
 ## How The LLM Was [Prompted]{.accent} {.prompt-slide}
@@ -199,7 +201,6 @@ We study how humans and AI **process information together**, using **eye trackin
 
 - **Task:** victims per step, total rewards, saved victims
 - **Visual attention:** game/chat fixation allocation, fixation duration, pupil-size SD, fixation and saccade counts
-- **Expertise labeling:** K-means clustering (K = 2) grouped participants into expert vs. novice
 
 :::
 ::: {.column width="50%"}
