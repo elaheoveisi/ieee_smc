@@ -175,7 +175,7 @@ We study how humans and AI **process information together**, using **eye trackin
 
 ---
 
-## Task and Eye-tracking [Features]{.accent}
+## Task and Eye-Tracking [Features]{.accent}
 
 | Feature | What it shows |
 |---|---|
