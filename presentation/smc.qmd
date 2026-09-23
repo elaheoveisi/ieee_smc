@@ -61,7 +61,7 @@ Operators must locate and recover people while conditions change quickly.
 
 :::
 ::: {.column width="40%" .center-v}
-![](assets/participant.png){fig-alt="Participant using an eye tracker while playing the search-and-rescue game" width="100%"}
+![](assets/participant.png){fig-alt="Participant using an eye tracker while playing the search-and-rescue game" width="70%"}
 :::
 :::
 
