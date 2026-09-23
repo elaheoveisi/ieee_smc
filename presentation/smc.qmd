@@ -27,7 +27,7 @@ title-slide-attributes:
   data-background-color: "#252525"
 ---
 
-## Search and Rescue Is A [Time-critical]{.accent} Human–AI Setting
+## Human–AI Setting in [Critical]{.accent} Situation
 
 ::: {.columns}
 ::: {.column width="47%"}
