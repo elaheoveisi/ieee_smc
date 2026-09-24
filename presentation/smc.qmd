@@ -209,17 +209,23 @@ We study how humans and AI **process information together**, using **eye trackin
 
 ## LLM Guidance Improved [Performance]{.accent}
 
-| Outcome | Effect | β | SE | q |
-|---|---:|---:|---:|---:|
-| **Victims per step** | **LLM** | **0.020** | 0.006 | **< .01** |
-|  | Expertise | 0.016 | 0.013 | ns |
-|  | LLM × Expertise | −0.009 | 0.010 | ns |
-| **Total rewards** | **LLM** | **267.143** | 90.203 | **< .01** |
-|  | Expertise | −17.714 | 135.183 | ns |
-|  | LLM × Expertise | 181.857 | 139.742 | ns |
-| **Saved victims** | LLM | 0.035 | 0.206 | ns |
-|  | Expertise | 0.221 | 0.436 | ns |
-|  | LLM × Expertise | 0.435 | 0.320 | ns |
+<style>
+.reveal #llm-guidance-improved-performance table th:nth-child(n+3) {
+  text-transform: none;
+}
+</style>
+
+| Outcome | Effect | β | q |
+|---|---:|---:|---:|
+| **Victims per step** | **LLM** | **0.020** | **< .01** |
+|  | Expertise | 0.016 | ns |
+|  | LLM × Expertise | −0.009 | ns |
+| **Total rewards** | **LLM** | **267.143** | **< .01** |
+|  | Expertise | −17.714 | ns |
+|  | LLM × Expertise | 181.857 | ns |
+| **Saved victims** | LLM | 0.035 | ns |
+|  | Expertise | 0.221 | ns |
+|  | LLM × Expertise | 0.435 | ns |
 
 ---
 
