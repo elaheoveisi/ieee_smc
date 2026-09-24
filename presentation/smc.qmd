@@ -38,7 +38,7 @@ Operators must locate and recover people while conditions change quickly.
 
 - Missions occur in **challenging environments**
 - Decisions must be made under **time pressure**
-- Need [**reliable partner**]{.accent} to help humans [^2^](#references){style="color:#ec672c; text-decoration:none;"}
+- Need [**reliable partner**]{.accent} to help humans [^1^](#references){style="color:#ec672c; text-decoration:none;"}
 
 :::
 ::: {.column width="53%"}
@@ -129,7 +129,7 @@ We study how humans and AI **process information together**, using **eye trackin
 </div>
 ```
 
-- **Expertise labeling:** K-means clustering (K = 2) grouped participants into expert vs. novice [^1^](#references){style="color:#ec672c; text-decoration:none;"}
+- **Expertise labeling:** K-means clustering (K = 2) grouped participants into expert vs. novice [^2^](#references){style="color:#ec672c; text-decoration:none;"}
 
 ---
 
@@ -159,8 +159,8 @@ We study how humans and AI **process information together**, using **eye trackin
 :::
 :::
 
-- **Grid-based world:** each cell represents an object such as empty space, wall, victim, lava, door, or key. [^4^](#references){style="color:#ec672c; text-decoration:none;"}
-- **Reachability check:** BFS determines which targets are reachable and their distance from the player. [^3^](#references){style="color:#ec672c; text-decoration:none;"}
+- **Grid-based world:** each cell represents an object such as empty space, wall, victim, lava, door, or key. [^3^](#references){style="color:#ec672c; text-decoration:none;"}
+- **Reachability check:** BFS determines which targets are reachable and their distance from the player. [^4^](#references){style="color:#ec672c; text-decoration:none;"}
 - Models: **OpenAI** and **Gemini**.
 
 ```{=html}
@@ -378,20 +378,6 @@ The next step is moving from **static guidance** toward **reliable, adaptive hum
 
 ---
 
-## [References]{.accent} {id="references"}
-
-::: {style="font-size:0.62em; line-height:1.5;"}
-[1] J. P. Distefano, H. Manjunatha, S. Chowdhury, K. Dantu, D. Doermann and E. T. Esfahani, "Using Physiological Information to Classify Task Difficulty in Human-Swarm Interaction," *2021 IEEE International Conference on Systems, Man, and Cybernetics (SMC)*, Melbourne, Australia, 2021, pp. 1198-1203, doi: [10.1109/SMC52423.2021.9658653](https://doi.org/10.1109/SMC52423.2021.9658653).
-
-[2] Handler, Abram, Kai R. Larsen, and Richard Hackathorn. "Large language models present new questions for decision support." *International Journal of Information Management* 79 (2024): 102811.
-
-[3] Siklóssy, Laurent, A. Rich, and Vesko Marinov. "Breadth-first search: some surprising results." *Artificial Intelligence* 4.1 (1973): 1-27.
-
-[4] Chevalier-Boisvert, M., Dai, B., Towers, M., Perez-Vicente, R., Willems, L., Lahlou, S., Pal, S., Castro, P. S., & Terry, J. (2023). Minigrid & Miniworld: Modular & Customizable Reinforcement Learning Environments for Goal-Oriented Tasks. *Advances in Neural Information Processing Systems (NeurIPS)*, 36.
-:::
-
----
-
 ## {background-image="assets/background.jpg" background-opacity="0.45"}
 
 ::: {style="display:flex; flex-direction:column; align-items:center; justify-content:center; height:80vh; text-align:center;"}
@@ -406,4 +392,18 @@ Thank you
 Questions?
 :::
 
+:::
+
+---
+
+## [References]{.accent} {id="references"}
+
+::: {style="font-size:0.62em; line-height:1.5;"}
+[1] Handler, Abram, Kai R. Larsen, and Richard Hackathorn. "Large language models present new questions for decision support." *International Journal of Information Management* 79 (2024): 102811.
+
+[2] J. P. Distefano, H. Manjunatha, S. Chowdhury, K. Dantu, D. Doermann and E. T. Esfahani, "Using Physiological Information to Classify Task Difficulty in Human-Swarm Interaction," *2021 IEEE International Conference on Systems, Man, and Cybernetics (SMC)*, Melbourne, Australia, 2021, pp. 1198-1203, doi: [10.1109/SMC52423.2021.9658653](https://doi.org/10.1109/SMC52423.2021.9658653).
+
+[3] Chevalier-Boisvert, M., Dai, B., Towers, M., Perez-Vicente, R., Willems, L., Lahlou, S., Pal, S., Castro, P. S., & Terry, J. (2023). Minigrid & Miniworld: Modular & Customizable Reinforcement Learning Environments for Goal-Oriented Tasks. *Advances in Neural Information Processing Systems (NeurIPS)*, 36.
+
+[4] Siklóssy, Laurent, A. Rich, and Vesko Marinov. "Breadth-first search: some surprising results." *Artificial Intelligence* 4.1 (1973): 1-27.
 :::
