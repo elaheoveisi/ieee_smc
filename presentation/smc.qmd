@@ -160,7 +160,7 @@ We study how humans and AI **process information together**, using **eye trackin
 :::
 
 - **Grid-based world:** each cell represents an object such as empty space, wall, victim, lava, door, or key.
-- **Reachability check:** BFS determines which targets are reachable and their distance from the player.
+- **Reachability check:** BFS determines which targets are reachable and their distance from the player. [^3^](#references){style="color:#ec672c; text-decoration:none;"}
 - Models: **OpenAI** and **Gemini**.
 
 ```{=html}
@@ -378,6 +378,8 @@ The next step is moving from **static guidance** toward **reliable, adaptive hum
 [1] J. P. Distefano, H. Manjunatha, S. Chowdhury, K. Dantu, D. Doermann and E. T. Esfahani, "Using Physiological Information to Classify Task Difficulty in Human-Swarm Interaction," *2021 IEEE International Conference on Systems, Man, and Cybernetics (SMC)*, Melbourne, Australia, 2021, pp. 1198-1203, doi: [10.1109/SMC52423.2021.9658653](https://doi.org/10.1109/SMC52423.2021.9658653).
 
 [2] Handler, Abram, Kai R. Larsen, and Richard Hackathorn. "Large language models present new questions for decision support." *International Journal of Information Management* 79 (2024): 102811.
+
+[3] Siklóssy, Laurent, A. Rich, and Vesko Marinov. "Breadth-first search: some surprising results." *Artificial Intelligence* 4.1 (1973): 1-27.
 :::
 
 ---
