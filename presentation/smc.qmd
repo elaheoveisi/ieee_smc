@@ -129,11 +129,7 @@ We study how humans and AI **process information together**, using **eye trackin
 </div>
 ```
 
-- **Expertise labeling:** K-means clustering (K = 2) grouped participants into expert vs. novice
-
-::: {style="font-size:0.55em; color:rgba(255,255,255,0.5); margin-top:0.6rem;"}
-Reference: [https://ieeexplore.ieee.org/abstract/document/9658653](https://ieeexplore.ieee.org/abstract/document/9658653)
-:::
+- **Expertise labeling:** K-means clustering (K = 2) grouped participants into expert vs. novice [^1^](#references){style="color:#ec672c; text-decoration:none;"}
 
 ---
 
@@ -346,6 +342,14 @@ Apply this approach to other human–AI teaming domains beyond search and rescue
 
 ::: {.punchline}
 The next step is moving from **static guidance** toward **reliable, adaptive human–AI teaming**.
+:::
+
+---
+
+## [References]{.accent} {id="references"}
+
+::: {style="font-size:0.62em; line-height:1.5;"}
+[1] J. P. Distefano, H. Manjunatha, S. Chowdhury, K. Dantu, D. Doermann and E. T. Esfahani, "Using Physiological Information to Classify Task Difficulty in Human-Swarm Interaction," *2021 IEEE International Conference on Systems, Man, and Cybernetics (SMC)*, Melbourne, Australia, 2021, pp. 1198-1203, doi: [10.1109/SMC52423.2021.9658653](https://doi.org/10.1109/SMC52423.2021.9658653).
 :::
 
 ---
