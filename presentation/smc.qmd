@@ -131,6 +131,10 @@ We study how humans and AI **process information together**, using **eye trackin
 
 - **Expertise labeling:** K-means clustering (K = 2) grouped participants into expert vs. novice
 
+::: {style="font-size:0.55em; color:rgba(255,255,255,0.5); margin-top:0.6rem;"}
+Reference: [https://ieeexplore.ieee.org/abstract/document/9658653](https://ieeexplore.ieee.org/abstract/document/9658653)
+:::
+
 ---
 
 ## How The LLM Was [Prompted]{.accent} {.prompt-slide}
