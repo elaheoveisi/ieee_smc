@@ -159,7 +159,7 @@ We study how humans and AI **process information together**, using **eye trackin
 :::
 :::
 
-- **Grid-based world:** each cell represents an object such as empty space, wall, victim, lava, door, or key.
+- **Grid-based world:** each cell represents an object such as empty space, wall, victim, lava, door, or key. [^4^](#references){style="color:#ec672c; text-decoration:none;"}
 - **Reachability check:** BFS determines which targets are reachable and their distance from the player. [^3^](#references){style="color:#ec672c; text-decoration:none;"}
 - Models: **OpenAI** and **Gemini**.
 
@@ -380,6 +380,8 @@ The next step is moving from **static guidance** toward **reliable, adaptive hum
 [2] Handler, Abram, Kai R. Larsen, and Richard Hackathorn. "Large language models present new questions for decision support." *International Journal of Information Management* 79 (2024): 102811.
 
 [3] Siklóssy, Laurent, A. Rich, and Vesko Marinov. "Breadth-first search: some surprising results." *Artificial Intelligence* 4.1 (1973): 1-27.
+
+[4] Chevalier-Boisvert, M., Dai, B., Towers, M., Perez-Vicente, R., Willems, L., Lahlou, S., Pal, S., Castro, P. S., & Terry, J. (2023). Minigrid & Miniworld: Modular & Customizable Reinforcement Learning Environments for Goal-Oriented Tasks. *Advances in Neural Information Processing Systems (NeurIPS)*, 36.
 :::
 
 ---
