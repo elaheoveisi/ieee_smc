@@ -290,6 +290,68 @@ We study how humans and AI **process information together**, using **eye trackin
 
 ---
 
+## Reported [Effects]{.accent} {#reported-effects .effects-slide}
+
+<style>
+.reveal .effects-slide > .panel-tabset > .panel-tabset-tabby { font-size: 0.75em; font-weight: 700; }
+.reveal .effects-slide .tab-content .panel-tabset-tabby { font-size: 0.5em; margin-top: 0.3em; }
+.reveal .effects-slide img { margin: 0.2em 0 0 0; box-shadow: none; border-radius: 0; }
+</style>
+
+::: {.panel-tabset}
+
+### Performance
+
+::: {.panel-tabset}
+
+#### Victims per step
+
+![](assets/reported_effects/victims_per_step.png){.nostretch fig-alt="Slope plots of the reported LLM, Expertise and LLM × Expertise coefficients for victims per step" width="100%"}
+
+#### Total rewards
+
+![](assets/reported_effects/total_rewards.png){.nostretch fig-alt="Slope plots of the reported LLM, Expertise and LLM × Expertise coefficients for total rewards" width="100%"}
+
+#### Saved victims
+
+![](assets/reported_effects/saved_victims.png){.nostretch fig-alt="Slope plots of the reported LLM, Expertise and LLM × Expertise coefficients for saved victims" width="100%"}
+
+:::
+
+### Eye features
+
+::: {.panel-tabset}
+
+#### Fixation duration
+
+![](assets/reported_effects/fixation_duration.png){.nostretch fig-alt="Slope plots of the reported LLM, Expertise and LLM × Expertise coefficients for fixation duration" width="100%"}
+
+#### Pupil-size SD
+
+![](assets/reported_effects/pupil_size_sd.png){.nostretch fig-alt="Slope plots of the reported LLM, Expertise and LLM × Expertise coefficients for pupil-size sd" width="100%"}
+
+#### Game-area fixation
+
+![](assets/reported_effects/game_area_fixation.png){.nostretch fig-alt="Slope plots of the reported LLM, Expertise and LLM × Expertise coefficients for game-area fixation" width="100%"}
+
+#### Chat-area fixation
+
+![](assets/reported_effects/chat_area_fixation.png){.nostretch fig-alt="Slope plots of the reported LLM, Expertise and LLM × Expertise coefficients for chat-area fixation" width="100%"}
+
+#### Fixation count
+
+![](assets/reported_effects/fixation_count.png){.nostretch fig-alt="Slope plots of the reported LLM, Expertise and LLM × Expertise coefficients for fixation count" width="100%"}
+
+#### Saccade count
+
+![](assets/reported_effects/saccade_count.png){.nostretch fig-alt="Slope plots of the reported LLM, Expertise and LLM × Expertise coefficients for saccade count" width="100%"}
+
+:::
+
+:::
+
+---
+
 ## Expertise Changes [How Guidance Is Used]{.accent}
 
 ::: {.cards}
