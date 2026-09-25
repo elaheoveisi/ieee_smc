@@ -280,7 +280,7 @@ We study how humans and AI **process information together**, using **eye trackin
 
 ---
 
-## Reported [Effects]{.accent} {#reported-effects .effects-slide}
+## [Results]{.accent} {#reported-effects .effects-slide}
 
 <style>
 .reveal .effects-slide > .panel-tabset > .panel-tabset-tabby { font-size: 0.75em; font-weight: 700; }
