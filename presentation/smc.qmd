@@ -389,6 +389,8 @@ Follows guidance directly
 
 - Sample size
 - Simulated grid-world task
+- Incorrect/conflicting LLM guidance was not tested
+- Additional physiological measures were not included
 
 :::
 ::: {.column width="66%"}
