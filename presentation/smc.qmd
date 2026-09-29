@@ -207,7 +207,7 @@ We study how humans and AI **process information together**, using **eye trackin
 
 ---
 
-## LLM Guidance Improved [Performance]{.accent}
+## LLM Guidance Improved [Performance]{.accent} {visibility="hidden"}
 
 <style>
 .reveal #llm-guidance-improved-performance table th:nth-child(n+3) {
@@ -229,7 +229,7 @@ We study how humans and AI **process information together**, using **eye trackin
 
 ---
 
-## LLM Guidance Changed [Visual Behavior]{.accent}
+## LLM Guidance Changed [Visual Behavior]{.accent} {visibility="hidden"}
 
 <style>
 .reveal .compact-results table {
