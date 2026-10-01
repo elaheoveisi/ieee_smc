@@ -12,6 +12,8 @@ GROUPS={
     'grid_eye_area':['Pupil-size SD','Game-area fixation','Chat-area fixation'],
     'grid_eye_fixation':['Fixation duration','Fixation count','Saccade count'],
 }
+# Column titles for the slide grids; the first drops the '(Novices)' qualifier.
+GRID_TITLES=['LLM effect',*TITLES[1:]]
 INK,MUTED,ACCENT,XACCENT='#FFFFFF','#B5BCC3','#EC672C','#FFD54F'
 
 def draw(name,outcomes):
@@ -44,7 +46,7 @@ def draw(name,outcomes):
                 ax.text(.5,.86,f'β = {number(beta)}   {qtext}',transform=ax.transAxes,
                         ha='center',va='center',fontsize=12,fontweight='bold',color=SLIDE_COLORS[j])
                 if i==0:
-                    ax.set_title(TITLES[j].replace('\n',' '),fontsize=13,fontweight='bold',pad=8)
+                    ax.set_title(GRID_TITLES[j].replace('\n',' '),fontsize=13,fontweight='bold',pad=8)
                 if i==2:
                     ax.set_xticks([0,1],[l.split('\n')[1] for l in XLABELS[j]])
                     ax.set_xlabel(XTITLES[j],labelpad=2,color=XACCENT,fontsize=12,fontweight='bold')
