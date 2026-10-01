@@ -274,6 +274,63 @@ Elahe Oveisi and Dr.&nbsp;Hemanth Manjunatha
   <span class="prompt-explanation" aria-live="polite">Select Play to explore each part of the prompt.</span>
 </div>
 </section>
+<section id="research-model" class="slide level2">
+<h2>What We <span class="accent">Investigate</span></h2>
+<p>How do <strong>LLM guidance</strong> and <strong>expertise</strong> change <strong>performance</strong> and <strong>visual behavior</strong>?</p>
+<svg viewbox="0 0 1180 450" role="img" aria-label="Diagram: LLM guidance, expertise and their interaction feed a mixed-effects model that predicts performance and visual behavior" style="display:block; width:100%; max-height:500px; margin:10px auto 0; font-family:Rubik, sans-serif;">
+  <defs>
+    <marker id="rm-blue" viewbox="0 0 10 10" refx="9" refy="5" markerwidth="7" markerheight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#6FB3F2"></path></marker>
+    <marker id="rm-orange" viewbox="0 0 10 10" refx="9" refy="5" markerwidth="7" markerheight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#EC672C"></path></marker>
+    <marker id="rm-purple" viewbox="0 0 10 10" refx="9" refy="5" markerwidth="7" markerheight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#B59AE0"></path></marker>
+    <marker id="rm-white" viewbox="0 0 10 10" refx="9" refy="5" markerwidth="7" markerheight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#FFFFFF"></path></marker>
+  </defs>
+
+  <!-- Factors -->
+  <rect x="20" y="10" width="330" height="120" rx="12" fill="rgba(111,179,242,0.12)" stroke="#6FB3F2" stroke-width="3"></rect>
+  <text x="185" y="62" text-anchor="middle" fill="#FFFFFF" font-size="28" font-weight="700">LLM guidance</text>
+  <text x="185" y="98" text-anchor="middle" fill="#B5BCC3" font-size="20">No LLM vs LLM</text>
+
+  <rect x="20" y="320" width="330" height="120" rx="12" fill="rgba(236,103,44,0.12)" stroke="#EC672C" stroke-width="3"></rect>
+  <text x="185" y="372" text-anchor="middle" fill="#FFFFFF" font-size="28" font-weight="700">Expertise</text>
+  <text x="185" y="408" text-anchor="middle" fill="#B5BCC3" font-size="20">Novice vs Expert</text>
+
+  <!-- Interaction -->
+  <line x1="185" y1="130" x2="185" y2="181" stroke="#B59AE0" stroke-width="2.5" stroke-dasharray="6 5"></line>
+  <line x1="185" y1="269" x2="185" y2="320" stroke="#B59AE0" stroke-width="2.5" stroke-dasharray="6 5"></line>
+  <circle cx="185" cy="225" r="44" fill="rgba(181,154,224,0.15)" stroke="#B59AE0" stroke-width="3"></circle>
+  <text x="185" y="238" text-anchor="middle" fill="#B59AE0" font-size="40" font-weight="700">×</text>
+  <text x="245" y="220" fill="#B59AE0" font-size="20" font-weight="700">LLM × Expertise</text>
+  <text x="245" y="246" fill="#B5BCC3" font-size="17">interaction</text>
+
+  <!-- Factors into the model -->
+  <path d="M350,70 C470,70 470,205 586,215" fill="none" stroke="#6FB3F2" stroke-width="3" marker-end="url(#rm-blue)"></path>
+  <path d="M410,234 L586,230" fill="none" stroke="#B59AE0" stroke-width="3" marker-end="url(#rm-purple)"></path>
+  <path d="M350,380 C470,380 470,255 586,245" fill="none" stroke="#EC672C" stroke-width="3" marker-end="url(#rm-orange)"></path>
+
+  <!-- Model -->
+  <rect x="590" y="175" width="160" height="100" rx="12" fill="rgba(255,255,255,0.06)" stroke="#8A9299" stroke-width="2"></rect>
+  <text x="670" y="218" text-anchor="middle" fill="#FFFFFF" font-size="21" font-weight="700">Mixed-effects</text>
+  <text x="670" y="246" text-anchor="middle" fill="#FFFFFF" font-size="21" font-weight="700">model</text>
+
+  <!-- Model into the outcomes -->
+  <path d="M750,210 C790,210 790,105 836,105" fill="none" stroke="#FFFFFF" stroke-width="3" marker-end="url(#rm-white)"></path>
+  <path d="M750,240 C790,240 790,335 836,335" fill="none" stroke="#FFFFFF" stroke-width="3" marker-end="url(#rm-white)"></path>
+
+  <!-- Outcomes -->
+  <rect x="840" y="10" width="330" height="190" rx="12" fill="rgba(255,255,255,0.05)" stroke="#FFD54F" stroke-width="3"></rect>
+  <text x="860" y="50" fill="#FFD54F" font-size="26" font-weight="700">Performance</text>
+  <text x="860" y="90" fill="#FFFFFF" font-size="20">• Victims per step</text>
+  <text x="860" y="124" fill="#FFFFFF" font-size="20">• Total rewards</text>
+  <text x="860" y="158" fill="#FFFFFF" font-size="20">• Saved victims</text>
+
+  <rect x="840" y="225" width="330" height="215" rx="12" fill="rgba(255,255,255,0.05)" stroke="#FFD54F" stroke-width="3"></rect>
+  <text x="860" y="265" fill="#FFD54F" font-size="26" font-weight="700">Visual behavior</text>
+  <text x="860" y="303" fill="#FFFFFF" font-size="20">• Pupil-size SD</text>
+  <text x="860" y="335" fill="#FFFFFF" font-size="20">• Game- / chat-area fixation</text>
+  <text x="860" y="367" fill="#FFFFFF" font-size="20">• Fixation duration and count</text>
+  <text x="860" y="399" fill="#FFFFFF" font-size="20">• Saccade count</text>
+</svg>
+</section>
 <section id="task-and-eye-tracking-features" class="slide level2">
 <h2>Task and Eye-Tracking <span class="accent">Features</span></h2>
 <table class="caption-top">
@@ -336,63 +393,6 @@ Elahe Oveisi and Dr.&nbsp;Hemanth Manjunatha
 <div style="text-align:center;">
 <p><img data-src="assets/setup-annotated.png" style="width:60.0%" alt="Annotated photo of a participant at the game and eye-tracker setup, with an example LLM guidance chat message shown alongside"></p>
 </div>
-</section>
-<section id="research-model" class="slide level2">
-<h2>What We <span class="accent">Investigate</span></h2>
-<p>How do <strong>LLM guidance</strong> and <strong>expertise</strong> change <strong>performance</strong> and <strong>visual behavior</strong>?</p>
-<svg viewbox="0 0 1180 450" role="img" aria-label="Diagram: LLM guidance, expertise and their interaction feed a mixed-effects model that predicts performance and visual behavior" style="display:block; width:100%; max-height:500px; margin:10px auto 0; font-family:Rubik, sans-serif;">
-  <defs>
-    <marker id="rm-blue" viewbox="0 0 10 10" refx="9" refy="5" markerwidth="7" markerheight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#6FB3F2"></path></marker>
-    <marker id="rm-orange" viewbox="0 0 10 10" refx="9" refy="5" markerwidth="7" markerheight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#EC672C"></path></marker>
-    <marker id="rm-purple" viewbox="0 0 10 10" refx="9" refy="5" markerwidth="7" markerheight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#B59AE0"></path></marker>
-    <marker id="rm-white" viewbox="0 0 10 10" refx="9" refy="5" markerwidth="7" markerheight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#FFFFFF"></path></marker>
-  </defs>
-
-  <!-- Factors -->
-  <rect x="20" y="10" width="330" height="120" rx="12" fill="rgba(111,179,242,0.12)" stroke="#6FB3F2" stroke-width="3"></rect>
-  <text x="185" y="62" text-anchor="middle" fill="#FFFFFF" font-size="28" font-weight="700">LLM guidance</text>
-  <text x="185" y="98" text-anchor="middle" fill="#B5BCC3" font-size="20">No LLM vs LLM</text>
-
-  <rect x="20" y="320" width="330" height="120" rx="12" fill="rgba(236,103,44,0.12)" stroke="#EC672C" stroke-width="3"></rect>
-  <text x="185" y="372" text-anchor="middle" fill="#FFFFFF" font-size="28" font-weight="700">Expertise</text>
-  <text x="185" y="408" text-anchor="middle" fill="#B5BCC3" font-size="20">Novice vs Expert</text>
-
-  <!-- Interaction -->
-  <line x1="185" y1="130" x2="185" y2="181" stroke="#B59AE0" stroke-width="2.5" stroke-dasharray="6 5"></line>
-  <line x1="185" y1="269" x2="185" y2="320" stroke="#B59AE0" stroke-width="2.5" stroke-dasharray="6 5"></line>
-  <circle cx="185" cy="225" r="44" fill="rgba(181,154,224,0.15)" stroke="#B59AE0" stroke-width="3"></circle>
-  <text x="185" y="238" text-anchor="middle" fill="#B59AE0" font-size="40" font-weight="700">×</text>
-  <text x="245" y="220" fill="#B59AE0" font-size="20" font-weight="700">LLM × Expertise</text>
-  <text x="245" y="246" fill="#B5BCC3" font-size="17">interaction</text>
-
-  <!-- Factors into the model -->
-  <path d="M350,70 C470,70 470,205 586,215" fill="none" stroke="#6FB3F2" stroke-width="3" marker-end="url(#rm-blue)"></path>
-  <path d="M410,234 L586,230" fill="none" stroke="#B59AE0" stroke-width="3" marker-end="url(#rm-purple)"></path>
-  <path d="M350,380 C470,380 470,255 586,245" fill="none" stroke="#EC672C" stroke-width="3" marker-end="url(#rm-orange)"></path>
-
-  <!-- Model -->
-  <rect x="590" y="175" width="160" height="100" rx="12" fill="rgba(255,255,255,0.06)" stroke="#8A9299" stroke-width="2"></rect>
-  <text x="670" y="218" text-anchor="middle" fill="#FFFFFF" font-size="21" font-weight="700">Mixed-effects</text>
-  <text x="670" y="246" text-anchor="middle" fill="#FFFFFF" font-size="21" font-weight="700">model</text>
-
-  <!-- Model into the outcomes -->
-  <path d="M750,210 C790,210 790,105 836,105" fill="none" stroke="#FFFFFF" stroke-width="3" marker-end="url(#rm-white)"></path>
-  <path d="M750,240 C790,240 790,335 836,335" fill="none" stroke="#FFFFFF" stroke-width="3" marker-end="url(#rm-white)"></path>
-
-  <!-- Outcomes -->
-  <rect x="840" y="10" width="330" height="190" rx="12" fill="rgba(255,255,255,0.05)" stroke="#FFD54F" stroke-width="3"></rect>
-  <text x="860" y="50" fill="#FFD54F" font-size="26" font-weight="700">Performance</text>
-  <text x="860" y="90" fill="#FFFFFF" font-size="20">• Victims per step</text>
-  <text x="860" y="124" fill="#FFFFFF" font-size="20">• Total rewards</text>
-  <text x="860" y="158" fill="#FFFFFF" font-size="20">• Saved victims</text>
-
-  <rect x="840" y="225" width="330" height="215" rx="12" fill="rgba(255,255,255,0.05)" stroke="#FFD54F" stroke-width="3"></rect>
-  <text x="860" y="265" fill="#FFD54F" font-size="26" font-weight="700">Visual behavior</text>
-  <text x="860" y="303" fill="#FFFFFF" font-size="20">• Pupil-size SD</text>
-  <text x="860" y="335" fill="#FFFFFF" font-size="20">• Game- / chat-area fixation</text>
-  <text x="860" y="367" fill="#FFFFFF" font-size="20">• Fixation duration and count</text>
-  <text x="860" y="399" fill="#FFFFFF" font-size="20">• Saccade count</text>
-</svg>
 </section>
 
 
