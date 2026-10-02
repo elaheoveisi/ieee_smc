@@ -14,6 +14,8 @@ GROUPS={
 }
 # Column titles for the slide grids; the first drops the '(Novices)' qualifier.
 GRID_TITLES=['LLM effect',*TITLES[1:]]
+# Baseline notes without the 'Novice' wording.
+GRID_BASELINES=['Baseline: No LLM','Baseline: No LLM','Baseline: LLM effect']
 INK,MUTED,ACCENT,XACCENT='#FFFFFF','#B5BCC3','#EC672C','#FFD54F'
 
 def draw(name,outcomes):
@@ -33,7 +35,7 @@ def draw(name,outcomes):
                 ax.plot([0,1],[0,beta],color=SLIDE_COLORS[j],lw=2.6,marker=['o','s','D'][j],ms=7,
                         ls=['-','--','-.'][j])
                 ax.axhline(0,color=MUTED,lw=1,ls=(0,(2,3)),zorder=0)
-                ax.annotate(BASELINES[j],(.5,0),xytext=(0,-4 if beta>=0 else 4),
+                ax.annotate(GRID_BASELINES[j],(.5,0),xytext=(0,-4 if beta>=0 else 4),
                             textcoords='offset points',ha='center',
                             va='top' if beta>=0 else 'bottom',fontsize=8.5,
                             color=MUTED,style='italic')
