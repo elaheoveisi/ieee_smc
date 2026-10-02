@@ -73,7 +73,7 @@ Operators must locate and recover people while conditions change quickly.
 :::
 
 ::: {.card}
-We study how humans and AI **process information together**, using **eye tracking** to inform **adaptive AI** for the future.
+We study how humans **process and respond to information from LLMs**, using **eye tracking** to inform future **adaptive LLM-based assistance**.
 :::
 
 ---
